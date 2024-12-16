@@ -1,0 +1,88 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap esg_report sub pb-0">
+	<div class="contentsWrap">
+			<div class="row section pb-lg-6">
+				<div class="row section lighten-5 pt-lg-5">
+					<div class="container col l12 s12 flex-top">
+						<div class="col l2 s12 mr-lg-3">
+							@@include('./include/snb.html')
+
+						</div>
+						<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+							<div class="title-wrap title-content-wrap mb-4 pb-4">
+								<h4>ESG경영보고서</h4>
+							</div>
+							<!-- breadcrumb -->
+							<div class="breadcrumb-wrap mb-4">
+								<ol class="breadcrumb">
+									<li><a href="#" class="home"></a></li>
+									<li><a href="#" class="txt">공사소개</a></li>
+                                    <li><a href="#" class="txt">ESG경영</a></li>
+									<li><a href="#" class="txt">ESG경영보고서</a></li>
+								</ol>
+							</div>
+						<!-- breadcrumb -->
+						<!--컨텐츠 내용-->
+						<div class="col l12 s12 contents-inner">
+                            <div class="sub_con">
+                                <div class="sub_tit_box"><img alt="아이콘" src="images/icon_intro-esg_report_top.svg">
+                                <h3 class="tit1">지속가능경영보고서</h3>
+
+                                <p class="txt1">서울특별시농수산식품공사는 2009년 7월 UNGC(UN Global Compact)에 가입하면서 지속가능경영을 시작하였고, 2010년부터 3차례에 걸쳐 이행보고서(Comnunication On Progress)를 발간한바있으며, 2013년부터 3개년간 경제, 사회, 환경부문에 대한 다양한 추진노력과 성과를 담아 이해관계자와 함께하고자 지속가능경영보고서를 발간하였습니다. 이 보고서는 최신 국제 가이드라인(GRI G4)에 따라 작성했으며, 제3자 검증기관인 한국능률협회인증원(KMAR)으로부터 이 보고서가 GRI G4 가이드라인의 핵심적 방식(Core Option)을 준용하여 신뢰할 만한 자료를 토대로 작성되었음을 확인 받았습니다. 공사는 앞으로도 이해관계자와 보다 적극적이고 투명한 소통을 강화하겠으며, 공사 운영에 대해 깨끗하고 투명한 정보공개는 물론 이해관계자 여러분의 기대에 부응하는 공사가 되도록 노력하겠습니다.</p>
+                                </div>
+
+                                <div class="sub_each">
+                                <div class="sus_rep col l12 s12">
+                                    <div class="rep_each col l4 s12 mb-sm-4">
+                                        <img alt="마음에 그린 마켓 함께하는 행복한 내일" src="https://www.garak.co.kr/common/images/garak/sub/rep_img1.jpg">
+                                        <span class="tit1">SAFF 2013</span>
+                                        <a class="down_a" href="https://www.garak.co.kr/upload/SAFF2013.pdf">SAFF 2013 다운로드
+                                            <i class="material-icons">file_download</i>
+                                        </a>
+                                    </div>
+
+                                    <div class="rep_each col l4 s12 mb-sm-4">
+                                        <img alt="마음에 그린 마켓 함께하는 행복한 내일" src="https://www.garak.co.kr/common/images/garak/sub/rep_img2.jpg">
+                                         <span class="tit1">SAFF 2014</span>
+                                         <a class="down_a" href="https://www.garak.co.kr/upload/SAFF2014.pdf">SAFF 2014 다운로드
+                                            <i class="material-icons">file_download</i>
+                                        </a>
+                                        </div>
+
+                                    <div class="rep_each col l4 s12">
+                                        <img alt="행복한 시장 더 행복한 세상" src="https://www.garak.co.kr/common/images/garak/sub/rep_img3.jpg">
+                                        <span class="tit1">SAFF 2015</span>
+                                         <a class="down_a" href="https://www.garak.co.kr/upload/SAFF2015.pdf">SAFF 2015 다운로드
+                                            <i class="material-icons">file_download</i>
+                                         </a>
+
+                                        </div>
+                                </div>
+                                </div>
+                                <!-- //sub_each --></div>
+						</div>
+						<!--/컨텐츠 내용-->
+						</div>
+						@@include('./include/quick-link.html')
+					</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
+<script>
+	$(".board-ico").click(function() {
+		 $(this).parent().siblings(".files-info").show();
+		 return false;
+ });
+ $(".close_files").click(function() {
+		 $(this).parent().hide();
+		 return false;
+ });
+ </script>

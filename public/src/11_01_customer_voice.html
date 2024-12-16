@@ -1,0 +1,430 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap customer_voice sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>고객의소리</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="고객센터">고객센터</a></li>
+								<li><a href="#" class="txt" aria-label="고객지원 이동">고객지원</a></li>
+                                <li><a href="#" class="txt" aria-label="고객의소리 이동">고객의소리</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="row mb-5 sec_01">
+
+                  <div class="col l12 s12">
+                      <div class="sub_tit_box">
+                          <img src="images/icon_cust-sound_top.svg" alt="공공데이터 개방 아이콘" />
+                          <div class="txt1">
+                              <b>고객의 소리는 여러분의 소중한 소리를 듣는 곳 입니다.</b><br>
+                              서로에 대한 예의를 지켜 아름다운 공간으로 가꾸어 갑시다.<br>건전한 토론문화 정립을 위해 다음의 내용은 사전 예고 없이 관리자에 의해 삭제될 수 있습니다.
+                          </div>
+                      </div>
+                  </div>
+              <div class="col l12 s12">
+                  <div class="sub-title-main flex mo-flex mb-sm-3 mb-2 left" tabindex="0">
+                      <img src="images/title-object.svg" alt="뱃지 아이콘" class="mr-2" />
+                      <h6 tabindex="0">고객의 소리 이용 시 주의 사항</h6>
+                  </div>
+                  <div class="col l12 s12">
+                      <div class="sub_each">
+                          <ul class="gr_list">
+                            <li>비속어 사용 또는 타인을 비방, 위해 하는 내용</li>
+                            <li>상업성 광고 및 반복게시물</li>
+                            <li>의견을 게시하기 전에 FAQ에 동일한 질문이 있는지 확인해 보시기 바랍니다.</li>
+                          </ul>
+                        </div>
+                  </div>
+              </div>
+
+            </div>
+            <div class="row mb-5 sec_02">
+                <div class="sub-title-main flex mo-flex mb-sm-3 mb-2 left" tabindex="0">
+                    <img src="images/title-object.svg" alt="뱃지 아이콘" class="mr-2" />
+                    <h6 tabindex="0">민원 처리 기간</h6>
+                </div>
+                <div class="col l12 s12">
+                    <div class="col l12 s12">
+                        <table class="tableB ta_c">
+                            <colgroup>
+                                <col width="70%">
+                                <col width="30%">
+                            </colgroup>
+                          <thead>
+                            <tr>
+                              <th style="border-radius: .5rem;"><div class="body-1-semibold white-text">민원종류</div></th>
+                              <th style="background: #0F316A;border-radius: .5rem;"><div class="body-1-semibold white-text">처리기간</div></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>감사실에서 직접 조사 처리해야 할 민원</td>
+                              <td>9일 이내</td>
+                            </tr>
+                            <tr>
+                              <td>5세대 이상의 공동이해와 관련되어 5인 이상이 연명한 다수인 관련 민원</td>
+                              <td>7일 이내</td>
+                            </tr>
+                            <tr>
+                              <td>상기 항목 해당되지 않는 일반 민원</td>
+                              <td>5일 이내</td>
+                            </tr>
+                            <tr>
+                              <td>관리비 고지서 재발급 등 민원인이 공사를 방문하여 단순한 행정절차 또는 형식요건에 관하여 질의 설명이나 조언을 구하는 경우</td>
+                              <td>즉시</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            <div class="row sec_03">
+                <!--날짜검색 필드-->
+                <div class="inp_cal field-default flex-top col l12 s12 mb-sm-4 p-3">
+                    <div class="date-wrap col s12">
+                    <div class="form-wrap">
+                        <input type="text" id="sch_begin_dt" name="sch_begin_dt" title="시작 날짜" class="datepicker  hasDatepicker" value="" placeholder="시작일" onkeyup="calFomatter(this);">
+                    </div>
+                    <span class="ip_txt">~</span>
+                    <div class="form-wrap">
+                        <input type="text" id="sch_end_dt" name="sch_end_dt" title="끝 날짜" class="datepicker sch_calendar hasDatepicker" value="" placeholder="종료일" onkeyup="calFomatter(this);">
+                    </div>
+                    </div>
+                    <div class="select-wrap col s12">
+
+                    <div class="form-wrap ml-lg-3">
+                        <div class="input-field flex">
+                        <select aria-label="상세분류 선택">
+                            <option value="" disabled selected>전체</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <li class="col s12 ml-2">
+                            <input type="text" class="search col right s12" name="sch_text" title="검색어 입력" placeholder="검색어 입력" value="">
+                            </li>
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="srch-wrap col s12 right">
+                    <ul class="right col s12">
+
+                        <li class="mr-2">
+                            <a href="#" class="btn" aria-label="검색 버튼">검색</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-dark" aria-label="초기화 버튼">초기화</a>
+                          </li>
+                    </ul>
+                    </div>
+                </div>
+                <!--/날짜검색 필드-->
+            </div>
+            <div class="row sec_04">
+                <!--건수-->
+                    <div class="row">
+                        <span class="col total mr-2">전체 <b>3820</b>건 </span>
+                        <span class="current"> (<strong>1</strong>/<span>382</span>)</span>
+                    </div>
+                <!--/건수-->
+                <!--테이블-->
+                <div class="board-table-wrap">
+                    <table class="tableA tableB">
+                        <caption>번호, 제목, 작성자, 등록일, 주관부서, 처리, 공개여부 등을 포함한 표</caption>
+                        <colgroup>
+                          <col style="width: 8%;">
+                          <col style="width: 30%;">
+                          <col style="width: 10%;">
+                          <col style="width: 15%;">
+                          <col style="width: 10%;">
+                          <col style="width: 12%;">
+                          <col style="width: 10%;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">주관부서</th>
+                            <th scope="col">처리</th>
+                            <th scope="col">공개여부</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          <tr>
+                            <td class="m_none">3147</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266611', 'N', '처리중', 'N', '가락몰 1층'); return false;">가락몰 1층</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEAOUfuksZ4/Qcxr3fu88ixSExGsV1WDR/w9AtjiDwRFMY=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-25 00:40:43</td>
+                            <td class="m_none">교통질서팀</td>
+                            <td class="m_fc_blue">처리중</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3146</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266609', 'Y', '완료', 'N', '빗물넘침방지 교체'); return false;">빗물넘침방지 교체</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEAJVuN66svdu9tdTd+BrUqzDDutKlOAKec3bADysH652k=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">문**</td>
+                            <td class="m_date">2024-09-24 03:06:56</td>
+                            <td class="m_none">시설운영팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3145</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266604', 'N', '완료', 'N', '바닥 시급합니다 빨리 처리해주세요'); return false;">바닥 시급합니다 빨리 처리해주세요</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEA+O/eg7c3yCFaPu9J4T7YmwVlgH2m47AFxfjIHA6BMsE=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-23 06:28:32</td>
+                            <td class="m_none">시설운영팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3144</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266603', 'N', '처리중', 'N', '담배 냄새 '); return false;">담배 냄새 </a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEAozRl61dIJIFsHNI1aptXGXECGCDFP1DIrwIbXcDNELo=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-22 10:55:31</td>
+                            <td class="m_none">교통질서팀</td>
+                            <td class="m_fc_blue">처리중</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3143</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266599', 'N', '완료', 'N', '시장이용이 정말 너무 불편합니다'); return false;">시장이용이 정말 너무 불편합니다</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEAL2s+TJ2Ov1rcFdZ/t+PzUYedkTxraNTwiqyWNUEdYHQ=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-19 15:51:46</td>
+                            <td class="m_none">수산팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3142</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266598', 'N', '완료', 'N', '심각수준'); return false;">심각수준</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEA2O0IrDzNmTlfmuIVhFmEbFhEUxg8TZzRmy+H8Bp+Eko=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-19 15:14:10</td>
+                            <td class="m_none">가락몰운영팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3141</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266586', 'N', '완료', 'N', '지하1층 영자네포차신고합니다.'); return false;">지하1층 영자네포차신고합니다.</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEA+HtvkMt8hIZgJpoC4smhVIHXNJvUu3OXbVgsWNH8WeQ=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-17 23:05:54</td>
+                            <td class="m_none">가락몰운영팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3140</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266585', 'Y', '완료', 'N', '자두속 변질로인한 환불 거부'); return false;">자두속 변질로인한 환불 거부</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEAxV02FkfyRoZkOLs5H5Tv1HM8grylSI4fZExeZM+2QHM=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">김**</td>
+                            <td class="m_date">2024-09-15 16:12:24</td>
+                            <td class="m_none">유통관리팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3139</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266584', 'N', '완료', 'N', '무인정산 도와주시는 안내원분 불친절'); return false;">무인정산 도와주시는 안내원분 불친절</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEA03ezi7bbw53DnbVI7Yw7bGC2LZrVLJYcSeeQxvvQn90=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">***</td>
+                            <td class="m_date">2024-09-14 11:25:00</td>
+                            <td class="m_none">교통질서팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">비공개</span></td>
+                          </tr>
+
+                          <tr>
+                            <td class="m_none">3138</td>
+                            <td class="tit">
+
+
+
+                                <a href="#" onclick="fnDetailAuth('266582', 'Y', '완료', 'N', '사기 구매 당했습니다'); return false;">사기 구매 당했습니다</a>
+
+
+                                <input type="hidden" name="sDi" id="sDi" value="MC0GCCqGSIb3DQIJAyEAJQ7T2q/xyLhZUsRLVLVzoolmipX446154HbXXZ6r9rE=">
+                                <input type="hidden" name="user_di" id="user_di" value="">
+                            </td>
+                            <td class="m_none">주**</td>
+                            <td class="m_date">2024-09-12 20:25:55</td>
+                            <td class="m_none">교통질서팀</td>
+                            <td class="m_fc_blue">완료</td>
+                            <td><span class="board_private">공개</span></td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+
+                    <!-- Pagination -->
+                     <style>
+                      .page-mo{
+                        display: none;
+                      }
+                      @media screen and (max-width: 1025px) {
+                        .page-number{
+                          display: none !important;
+                        }
+                        .page-mo{
+                          display: block;
+                          height: 35px; line-height: 35px;
+                          margin: 0 1rem;
+                        }
+                        .page-mo div{
+                          margin: 0 .5rem;
+                          text-align: center;
+                        }
+                      }
+                     </style>
+                    <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                    <span class="page-control">
+                        <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                        <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                    </span>
+                    <span class="page-number">
+                        <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                        <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                        <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                    </span>
+                    <!--241202 3차수정사항 추가-->
+                    <span class="page-mo mo-flex">
+                      <div>1</div>
+                      <div>/</div>
+                      <div>123</div>
+                    </span>
+                    <span class="page-control">
+                        <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                        <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                    </span>
+                    </div>
+
+                    <div class="col l12 s12">
+                        <div class="common_btn_box">
+                            <div class="pos_right">
+                                <a href="11_02_ceo_wish_submit.html" class="common_btn blue_btn" onclick="fnInsertForm(); return false;">등록</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/테이블-->
+            </div>
+            <!-- /컨텐츠 내용 -->
+            </div>
+            </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

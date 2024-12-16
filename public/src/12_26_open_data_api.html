@@ -1,0 +1,90 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap open_data sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>오픈API소개</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="정보공개로 이동">정보공개</a></li>
+								<li><a href="#" class="txt" aria-label="공공데이터 이동">공공데이터</a></li>
+                                <li><a href="#" class="txt" aria-label="오픈API소개 이동">오픈API소개</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+						
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="row mb-5 sec_01">
+								<div class="sub-title-main flex mo-flex mb-sm-3 mb-3 left" tabindex="0">
+                                    <img src="images/title-object.svg" alt="뱃지 아이콘" class="mr-2" />
+                                    <h6 tabindex="0">서비스 방식 및 흐름</h6>
+                                </div>
+                                <div class="col l12 s12">
+                                    <div class="sub_tit_box">
+                                        <img src="images/icon_open-api_top.svg" alt="오픈API소개 아이콘" />
+                                        <div class="txt1">
+                                            서울시농수산식품공사에서 보유한 다양한 농수산물 관련 유통 공공데이터 정보( 도매시장, 시장도매인, 중도매인별 거래정보, 
+                                            품목별 가격, 판매결과, 경매결과 등)를 외부에 웹 서비스(Web Service)형태로 공개하여 사용자가 원하는 농수산물유통 
+                                            공공데이터 콘텐츠를 만들 수 있도록 지원하는 웹 개발 프로그램입니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l12 s12 mt-3 flex">
+                                    <img class="col l12 s12 center pl-lg-5 pr-lg-5" src="images/img_open-api_flow.svg" alt="오픈api플로우" tabindex="0">
+							    </div>
+						    </div>
+                            <div class="row sec_02">
+                                <div class="row">
+                                    <div class="sub-title-main flex mo-flex mb-sm-3 mb-3 left" tabindex="0">
+                                        <img src="images/title-object.svg" alt="뱃지 아이콘" class="mr-2" />
+                                        <h6 tabindex="0">인증키 발급 절차</h6>
+                                    </div>
+                                    <div class="col l12 s12">
+                                        <div class="col l12 s12 flex-top sec_02">
+                                            <dl class="col l4 s12 centered mr-lg-5 mb-sm-5">
+                                                <h2>01</h2>
+                                                <dt><img src="images/img_open-api_step01.svg" alt="발급절차1"></dt>
+                                                <dd>OpenAPI 인증키발급<br>
+                                                    메뉴 클릭</dd>
+                                            </dl>
+                                            <dl class="col l4 s12 centered mr-lg-5 mb-sm-5">
+                                                <h2>02</h2>
+                                                <dt><img src="images/img_open-api_step02.svg" alt="발급절차2"></dt>
+                                                <dd>인증키발급<br>
+                                                    <span>(이름, 이메일, 소속 입력 후 신청)</span></dd>
+                                            </dl>
+                                            <dl class="col l4 s12 centered mb-sm-5">
+                                                <h2>03</h2>
+                                                <dt><img src="images/img_open-api_step03.svg" alt="발급절차3"></dt>
+                                                <dd>이메일로 인증키<br>
+                                                    발급 전송</dd>
+                                            </dl>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						<!-- /컨텐츠 내용 -->
+                         </div>
+                         </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

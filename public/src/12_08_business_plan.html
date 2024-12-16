@@ -1,0 +1,269 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap management sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>사업계획</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="정보공개로 이동">정보공개</a></li>
+								<li><a href="#" class="txt" aria-label="경영공시 이동">경영공시</a></li>
+                                <li><a href="#" class="txt" aria-label="사업계획 이동">사업계획</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="row mb-5 sec_01">
+                                <div class="row">
+                                    <div class="sub-title-main flex mo-flex mb-sm-3 mb-2 left" tabindex="0">
+                                        <img src="images/title-object.svg" alt="뱃지 아이콘" class="mr-2" />
+                                        <h6 tabindex="0">2024년도 사업계획</h6>
+                                    </div>
+                                    <div class="col l12 s12">
+                                        <div class="pl_18 clear">
+                                            <h5 class="sub_con_tit3 left">총괄</h5>
+                                            <span class="right mb-2">(단위 : 백만원)</span> <span class="scroll_txt">좌우로 스크롤해서 확인 가능합니다.</span>
+                                            
+                                            <div class="scroll_box mb_40">
+                                            <table class="tableB ta_c mt-sm-2">
+                                                <caption>2022년도 사업계획 총괄 - 구분, 합계, 시설현대화사업, 안전강화 및 시설유지보수, 유통개선 및 영업활성화, 지속가능경영체계 구축 표</caption>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="co">구분</th>
+                                                        <th scope="col">합계</th>
+                                                        <th scope="col">고객지향<br>
+                                                        거래체계구축</th>
+                                                        <th scope="col">미래시장<br>
+                                                        가치창조</th>
+                                                        <th scope="col">안전·안심<br>
+                                                        시장구현</th>
+                                                        <th scope="col">유통물류<br>
+                                                        시스템 혁신</th>
+                                                        <th scope="col">지속가능<br>
+                                                        경영구현</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="center">건수(건)</td>
+                                                        <td>58</td>
+                                                        <td>7</td>
+                                                        <td>14</td>
+                                                        <td>19</td>
+                                                        <td>9</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">금액<br>
+                                                        (백만원)</td>
+                                                        <td>36,326</td>
+                                                        <td>3,397</td>
+                                                        <td>23,153</td>
+                                                        <td>5,275</td>
+                                                        <td>3,726</td>
+                                                        <td>775</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">비율(%)</td>
+                                                        <td>100%</td>
+                                                        <td>9%</td>
+                                                        <td>64%</td>
+                                                        <td>15%</td>
+                                                        <td>10%</td>
+                                                        <td>2%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row sec_02">
+                            <!--날짜검색 필드-->
+                            <div class="inp_cal field-default flex-top col l12 s12 mb-sm-4 p-3">
+                                <div class="date-wrap col s12">
+                                <div class="form-wrap">
+                                    <input type="text" id="sch_begin_dt" name="sch_begin_dt" title="시작 날짜" class="datepicker  hasDatepicker" value="" placeholder="시작일" onkeyup="calFomatter(this);">
+                                </div>
+                                <span class="ip_txt">~</span>
+                                <div class="form-wrap">
+                                    <input type="text" id="sch_end_dt" name="sch_end_dt" title="끝 날짜" class="datepicker sch_calendar hasDatepicker" value="" placeholder="종료일" onkeyup="calFomatter(this);">
+                                </div>
+                                </div>
+                                <div class="select-wrap col s12">
+                              
+                                <div class="form-wrap ml-lg-3">
+                                    <div class="input-field flex">
+                                    <select aria-label="상세분류 선택">
+                                        <option value="" disabled selected>전체</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <li class="col s12 ml-2">
+                                        <input type="text" class="search col right s12" name="sch_text" title="검색어 입력" placeholder="검색어 입력" value="">
+                                        </li>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                                <div class="srch-wrap col s12 right">
+                                <ul class="right col s12">
+                        
+                                    <li class="mr-2">
+                                       <a href="#" class="btn" aria-label="검색 버튼">검색</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn-dark" aria-label="초기화 버튼">초기화</a>
+                                     </li>
+                                </ul>
+                                </div>
+                            </div>
+                            <!--/날짜검색 필드-->
+                            </div>
+                            <div class="row sec_03">
+                                <!--건수-->
+                                    <div class="row">
+                                        <span class="col total mr-2">전체 <b>3820</b>건 </span> 
+                                        <span class="current"> (<strong>1</strong>/<span>382</span>)</span>
+                                    </div>
+                                <!--/건수-->
+                                <!--테이블-->
+                                <div class="board-table-wrap">
+                                    <table class="board-table" aria-label="게시판 목록">
+                                    <colgroup class="m-hide">
+                                        <col width="10%">
+                                        <col width="50%">
+                                        <col width="10%">
+                                        <col width="10%">
+                                        <col width="10%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr class="m-hide">
+                                        <th scope="col">번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">담당부서</th>
+                                        <th scope="col">등록일</th>
+                                        <th scope="col">첨부</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="nt">
+                                        <td class="m-hide">
+                                            1
+                                        </td>
+                                        
+                                        <td class="board-subject">
+                                            <a href="#" title="2024년도 사업계획">	2024년도 사업계획</a>
+                                        </td>
+                                        <td class="board-team m-hide">기획팀</td>
+                                        <td class="board-date">2024-07-04</td>
+                                        <td>
+                                            <a href="#" title="첨부파일 다운로드" aria-label="첨부파일 다운로드">
+                                            <span class="board-ico files icon_file">첨부파일</span>
+                                            </a>
+                                            <div class="files-info">
+                                                <ul>
+                                                                        
+                                                    <li><a href="#" onclick="fnDownload(); return false;" class="file icon_file icon_hwpx">2024년도 사업계획.hwpx</a></li>
+                                        
+                                                    <li><a href="#" onclick="fnDownload(); return false;" class="file icon_file icon_pdf">2024년도 사업계획.pdf</a></li>
+                                        
+                                                </ul>
+                                            <a href="#" class="close_files" aria-label="첨부파일 닫기">Close</a>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-hide">
+                                               2
+                                            </td>
+                                            
+                                            <td class="board-subject">
+                                                <a href="#" title="2024년도 사업계획">	2024년도 사업계획</a>
+                                            </td>
+                                            <td class="board-team m-hide">기획팀</td>
+                                            <td class="board-date">2024-07-04</td>
+                                            <td>
+                                                <a href="#" title="첨부파일 다운로드" aria-label="첨부파일 다운로드">
+                                                <span class="board-ico files icon_pdf">첨부파일</span>
+                                                </a>
+                                                <div class="files-info">
+                                                    <ul>
+                                                                            
+                                                        <li><a href="#" onclick="fnDownload(''); return false;" class="file icon_file icon_hwpx">2024년도 사업계획.hwpx</a></li>
+                                            
+                                                        <li><a href="#" onclick="fnDownload(''); return false;" class="file icon_file icon_pdf">2024년도 사업계획.pdf</a></li>
+                                            
+                                                    </ul>
+                                                <a href="#" class="close_files" aria-label="첨부파일 닫기">Close</a>
+                                                </div>
+                                            </td>
+                                            </tr>
+                                        <!-- 반복되는 행들... -->
+                                    </tbody>
+                                    </table>
+                    
+                                    <!-- Pagination -->
+                                    <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                                    <span class="page-control">
+                                        <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                                        <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                                    </span>
+                                    <span class="page-number">
+                                        <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                                        <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                                        <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                                    </span>
+                                    <span class="page-control">
+                                        <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                                        <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                                    </span>
+                                    </div>
+                                </div>
+                                <!--/테이블-->
+                            </div>
+						</div>
+                    <!-- /컨텐츠 내용 -->
+                    </div>
+
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
+<script>
+    $(".board-ico").click(function() {
+      $(this).parent().siblings(".files-info").show();
+      return false;
+    });
+    $(".close_files").click(function() {
+      $(this).parent().hide();
+      return false;
+    });
+  </script>
+  

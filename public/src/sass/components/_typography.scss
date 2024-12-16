@@ -1,0 +1,482 @@
+
+
+@use "sass:math";
+@charset "UTF-8";
+@import "components/global";
+/*pretendard*/
+@font-face {
+	font-family: "Pretendard";
+	src: url('../../fonts/pretendard/Pretendard-Light.eot');
+	src: url('../../fonts/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+	  url('../../fonts/pretendard/Pretendard-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Pretendard";
+	src: url('../../fonts/pretendard/Pretendard-Regular.eot');
+	src: url('../../fonts/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+	  url('../../fonts/pretendard/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Pretendard";
+	src: url('../../fonts/pretendard/Pretendard-Medium.eot');
+	src: url('../../fonts/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+	  url('../../fonts/pretendard/Pretendard-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../../fonts/pretendard/Pretendard-SemiBold.eot');
+    src: url('../../fonts/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/pretendard/Pretendard-SemiBold.woff') format('woff'),
+        url('../../fonts/pretendard/Pretendard-SemiBold.ttf') format("truetype");
+	font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+	font-family: "Pretendard";
+	src: url('../../fonts/pretendard/Pretendard-Bold.eot');
+	src: url('../../fonts/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/pretendard/Pretendard-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Pretendard";
+	src: url('../../fonts/pretendard/Pretendard-Black.eot');
+	src: url('../../fonts/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/pretendard/Pretendard-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+/* Material Icons : 구글아이콘 */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/material-icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../../fonts/material-icons/MaterialIcons-Regular.woff') format('woff'),
+    url('../../fonts/material-icons/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+    vertical-align: sub;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@mixin font-light-typography-h1 {
+  // Light/Typography/H1 //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 96px;  
+ /* Recommend for responsive css clamp(mobile, mid, desktop) - 
+ you can change 5vw value
+  font-size:clamp(50px, 5vw, 96px); */
+ line-height: 116.7%;
+ text-decoration: none;
+ letter-spacing: -1.5px; } 
+
+@mixin font-light-typography-h2 {
+  // Light/Typography/H2 //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 60px;  
+ /* Recommend for responsive css clamp(mobile, mid, desktop) - 
+ you can change 5vw value
+  font-size:clamp(48px, 5vw, 60px); */
+ line-height: 120%;
+ text-decoration: none;
+ letter-spacing: -0.5px; } 
+
+@mixin font-light-typography-h3 {
+  // Light/Typography/H3 //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 48px; 
+ line-height: 133.33%;
+ text-decoration: none;
+ letter-spacing: 0.0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: 1.8rem;
+ }
+} 
+
+@mixin font-light-typography-h4 {
+  // Light/Typography/H4 //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 32px; 
+ line-height: 125%;
+ text-decoration: none;
+ letter-spacing: 0px;
+ @media screen and (max-width: 1024px) {
+  font-size: 1.4rem;
+ }
+} 
+
+@mixin font-light-typography-h5 {
+  // Light/Typography/H5 //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 24px; 
+ line-height: 133.4%;
+ text-decoration: none;
+ letter-spacing: 0.0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: 1.4rem;
+ }
+} 
+
+@mixin font-light-typography-h6 {
+  // Light/Typography/H6 //
+ font-family: 'Pretendard';
+ font-weight: 600;
+ font-size: 20px; 
+ line-height: 160%;
+ text-decoration: none;
+ letter-spacing: 0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: 1.1rem;
+ }
+} 
+
+ @mixin font-light-typography-banner-title {
+  // Light/Typography/banner-title //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 40px; 
+ line-height: 100%;
+ text-decoration: none;
+ letter-spacing: 0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: 1.8rem;
+ }
+} 
+
+@mixin font-light-typography-banner-subtitle {
+  // Light/Typography/banner-subtitle //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 22px; 
+ line-height: 160.0%;
+ text-decoration: none;
+ @media screen and (max-width: 1024px) {
+  font-size: 1.1rem;
+ }
+} 
+
+@mixin font-light-typography-body-1 {
+  // Light/Typography/Body 1 //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 16px; 
+ line-height: 150%;
+ text-decoration: none;
+ letter-spacing: 0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: 1rem;
+ }
+} 
+
+@mixin font-light-typography-body-1-semibold {
+  // Light/Typography/Body 1 Semibold //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 16px; 
+ line-height: 150%;
+ text-decoration: none;
+ letter-spacing: 0.0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: 1rem;
+ }
+} 
+
+@mixin font-light-typography-body-2 {
+  // Light/Typography/Body 2 //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 14px; 
+ line-height: 142.86%;
+ text-decoration: none;
+ letter-spacing: 0px; 
+ @media screen and (max-width: 1024px) {
+  font-size: .9rem;
+ }
+} 
+
+@mixin font-light-typography-body-2-semibold {
+  // Light/Typography/Body 2 Semibold //
+ font-family: 'Pretendard';
+ font-weight: 600;
+ font-size: 14px; 
+ line-height: 142.86%;
+ text-decoration: none;
+ letter-spacing: 0px;
+ @media screen and (max-width: 1024px) {
+  font-size: .9rem;
+ }
+} 
+
+@mixin font-light-typography-subtitle-1 {
+  // Light/Typography/Subtitle 1 //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 18px; 
+ line-height: 175.0%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-typography-subtitle-2 {
+  // Light/Typography/Subtitle 2 //
+ font-family: 'Pretendard';
+ font-weight: 600;
+ font-size: 16px; 
+ line-height: 157.0%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-typography-overline {
+  // Light/Typography/Overline //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 12px; 
+ line-height: 125%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-typography-caption {
+  // Light/Typography/Caption //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 12px; 
+ line-height: 166.67%;
+ text-decoration: none;
+ letter-spacing: 0.0px;
+ @media screen and (max-width: 1024px) {
+  font-size: .8rem;
+ } 
+} 
+
+ @mixin font-light-typography-toast {
+  // Light/Typography/Toast //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 16px; 
+ line-height: 131.25%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-typography-caption-semibold {
+  // Light/Typography/Caption Semibold //
+ font-family: 'Pretendard';
+ font-weight: 600;
+ font-size: 12px; 
+ line-height: 166.67%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+ @mixin font-light-components-button-xlarge {
+  // Light/Components/Button Large //
+ font-family: 'Pretendard';
+ font-weight: 600;
+ font-size: 15px; 
+ line-height: 171.43%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-button-large {
+  // Light/Components/Button Large //
+ font-family: 'Pretendard';
+ font-weight: 600;
+ font-size: 15px; 
+ line-height: 171.43%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-button-medium {
+  // Light/Components/Button Medium //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 14px; 
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-button-medium-capitalize {
+  // Light/Components/Button Medium Capitalize //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 14px; 
+ line-height: 171.43%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-button-small {
+  // Light/Components/Button Small //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 13px; 
+ line-height: 169.23%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-input-label {
+  // Light/Components/Input Label //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 12px; 
+ line-height: 100%;
+ text-decoration: none;
+ letter-spacing: 0px; } 
+
+@mixin font-light-components-helper-text {
+  // Light/Components/Helper Text //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 12px; 
+ line-height: 166.67%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-input-text {
+  // Light/Components/Input Text //
+ font-family: 'pretendard';
+ font-weight: 400;
+ font-size: 16px; 
+ line-height: 150%;
+ text-decoration: none;
+ letter-spacing: 0px; } 
+
+@mixin font-light-components-avatar-initials {
+  // Light/Components/Avatar Initials //
+ font-family: 'Pretendard';
+ font-weight: 400;
+ font-size: 18px; 
+ line-height: 111.11%;
+ text-decoration: none;
+ letter-spacing: 0.1px; } 
+
+@mixin font-light-components-chip {
+  // Light/Components/Chip //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 13px; 
+ line-height: 138.46%;
+ text-decoration: none;
+ letter-spacing: 0px; } 
+
+@mixin font-light-components-tooltip {
+  // Light/Components/Tooltip //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 11px; 
+ line-height: 145.45%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+@mixin font-light-components-alert-title {
+  // Light/Components/Alert Title //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 16px; 
+ line-height: 150.0%;
+ text-decoration: none;
+ letter-spacing: 0px; } 
+
+@mixin font-light-components-table-header {
+  // Light/Components/Table Header //
+ font-family: 'Pretendard';
+ font-weight: 500;
+ font-size: 12px; 
+ line-height: 200%;
+ text-decoration: none;
+ letter-spacing: 0px; } 
+
+@mixin font-light-components-badge-label {
+  // Light/Components/Badge Label //
+ font-family: 'Pretendard';
+ font-weight: 700;
+ font-size: 12px; 
+ line-height: 166.67%;
+ text-decoration: none;
+ letter-spacing: 0.0px; } 
+
+a {
+  text-decoration: none;
+}
+
+html{
+  line-height: 1.5;
+  font-weight: normal;
+  color: $light-text-primary;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+// Header Styles
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { @include font-light-typography-h1()}
+h2 { @include font-light-typography-h2()}
+h3 { @include font-light-typography-h3()}
+h4 { @include font-light-typography-h4()}
+h5 { @include font-light-typography-h5()}
+h6 { @include font-light-typography-h6()}
+.banner-title {@include font-light-typography-banner-title()}
+.banner-subtitle {@include font-light-typography-banner-subtitle()}
+.body-1 {@include font-light-typography-body-1()}
+.body-1-semibold {@include font-light-typography-body-1-semibold()}
+.body-2 {@include font-light-typography-body-2()}
+.body-2-semibold {@include font-light-typography-body-2-semibold()}
+.subtitle-1 {@include font-light-typography-subtitle-1()}
+.subtitle-2 {@include font-light-typography-subtitle-2()}
+.overlime {@include font-light-typography-overline()}
+.caption {@include font-light-typography-caption()}
+.caption-semibold {@include font-light-typography-caption-semibold()}
+.toast {@include font-light-typography-toast()}
+.button-large {@include font-light-components-button-large()}
+.button-medium {@include font-light-components-button-medium()}
+.button-small {@include font-light-components-button-small()}
+.button-medium-capitalize {@include font-light-components-button-medium-capitalize()}
+.input-label {@include font-light-components-input-label()}
+.helper-text {@include font-light-components-helper-text()}
+.input-text {@include font-light-components-input-text()}
+// Text Styles
+em { font-style: italic; }
+strong { font-weight: 500; }
+small { font-size: 75%; }
+.light { font-weight: 300; }
+.thin { font-weight: 200; }
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+}

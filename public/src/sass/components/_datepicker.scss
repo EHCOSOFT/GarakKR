@@ -1,0 +1,55 @@
+.modal-content.datepicker-container,
+.modal.datepicker-modal.open
+{
+	display: none !important;
+}
+.date-wrap{
+	.modal-overlay{
+		display: none !important;
+	}
+	&::after{
+		clear: both;
+	}
+	.form-wrap{
+		position: relative;
+		.ui-datepicker-trigger{
+			position: absolute;
+			right: 12px;
+			top: 50%;
+			margin-top: -13px;
+		}
+		input{
+			margin-bottom: 0;
+		}
+	}
+
+}
+.ui-datepicker-header {
+	background-color: #F4F8FF !important;
+}
+.ui-datepicker .ui-datepicker-title {
+	display: flex;
+	margin: 0 2.3em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-prev{
+	width: 24px !important; height: 24px !important;
+	background: url("../../images/icon_common_ChevronLeft.svg")!important;
+}
+.ui-datepicker .ui-datepicker-next{
+	width: 24px !important; height: 24px !important;
+	background: url("../../images/icon_common_ChevronRight.svg")!important;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{
+	top: 15px !important;
+}
+.ui-datepicker .ui-datepicker-title select {
+	display: inline-block;
+	width: 100% !important;
+	font-size: 1.2rem !important;
+	margin: 1px 0;
+	&:focus, &:active{
+		border: 1px solid $light-primary-main;
+	}
+}

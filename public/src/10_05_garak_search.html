@@ -1,0 +1,598 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap garak-search sub-o sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4 mb-0">
+			<div class="row section lighten-5 pt-lg-5 pb-lg-5 mb-0">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>매장검색</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="가락몰안내 이동">가락몰 안내</a></li>
+								<li><a href="#" class="txt" aria-label="가락몰 소개 이동">가락몰 소개</a></li>
+                <li><a href="#" class="txt" aria-label="매장검색">매장검색</a></li>
+						</nav>
+						<!-- breadcrumb -->
+            <!-- tabs -->
+              <style>
+                @media screen and (max-width: 1025px) {
+                    .tabs{
+                        display: block;
+                    }
+                }
+              </style>
+                <div class="tab-wrap mb-lg-5">
+                    <div class="row">
+                    <div class="col l12 s12">
+                        <ul class="tabs" role="tablist">
+                            <li class="tab mall_btn_03" role="presentation"><a class="active" href="#test1" aria-controls="test1" role="tab">업무동</a></li>
+                            <li class="tab mall_btn_02" role="presentation"><a href="#test2" aria-controls="test2" role="tab">판매동</a></li>
+                            <li class="tab mall_btn_07" role="presentation"><a href="#test3" aria-controls="test3" role="tab">가락몰1관</a></li>
+                            <li class="tab mall_btn_06" role="presentation"><a href="#test4" aria-controls="test4" role="tab">가락몰2관</a></li>
+                            <li class="tab mall_btn_05" role="presentation"><a href="#test5" aria-controls="test5" role="tab">가락몰3관</a></li>
+                            <li class="tab mall_btn_04" role="presentation"><a href="#test6" aria-controls="test6" role="tab">가락몰4관</a></li>
+                            <li class="tab mall_btn_01" role="presentation"><a href="#test7" aria-controls="test7" role="tab">가락몰5관</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!--/tabs-->
+                <!--필터영역-->
+                <div class="col l12 s12 filter-wrap contents-inner mb-3">
+                  <h4 class="col flex mb-sm-3">
+                    <div class="floor col grey-text">1층</div>
+                    <div class="line col body-1-semibold ml-2 mr-2 grey-text">|</div>
+                    <div class="dong col grey-text">업무동</div>
+                  </h4>
+                  <div class="center select-wrap flex-top">
+                    <div class="input-field col l3 s12">
+                      <select>
+                        <option value="" disabled selected>1F</option>
+                        <option value="1">1F</option>
+                        <option value="2">2F</option>
+                        <option value="3">3F</option>
+                      </select>
+                      <label class="blind">층별 선택</label>
+                    </div>
+                    <a h href="#all-floor" class="btn btn_outlined white btn modal-trigger">전체 동별 시설 안내</a>
+                   <!-- Modal Structure -->
+                  <div id="all-floor" class="modal">
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close"><i class="material-icons grey-text mt-sm-2" style="font-size: 2rem;">close</i></a>
+                    </div>
+                    <div class="modal-content pt-sm-0">
+                      <ul class="floor_contents" >
+                        <li><h5>판매동</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="G3F" title="3F 식당가 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>식당가</a><a href="javascript:void(0);" id="G2F" title="2F 식자재 매장.청과시장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>식자재 매장.청과시장</a><a href="javascript:void(0);" id="G1F" title="1F 수산시장,축산시장:건어시장:젓갈시장,휴게실(매점) 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>수산시장,축산시장<br>건어시장<br>젓갈시장,휴게실(매점)</a><a href="javascript:void(0);" id="GB1" title="B1 청과부류.휴게실(매점) 검색 결과 목록으로 이동 합니다."><span>B1&nbsp;</span>청과부류.휴게실(매점)</a><a href="javascript:void(0);" id="GB2" title="B2 축산부산물시장 검색 결과 목록으로 이동 합니다."><span>B2&nbsp;</span>축산부산물시장</a></div></li><li class="mT30"><h5>가락몰1관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="E3F" title="3F 스타트업 센터 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>스타트업 센터</a><a href="javascript:void(0);" id="E2F" title="2F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="E1F" title="1F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>식자재 매장</a></div></li><li class="mT30"><h5>가락몰2관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="D3F" title="3F 스타트업 센터 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>스타트업 센터</a><a href="javascript:void(0);" id="D2F" title="2F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="D1F" title="1F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>식자재 매장</a></div></li><li class="mT30"><h5>가락몰3관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="C3F" title="3F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="C2F" title="2F 친환경 매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>친환경 매장</a><a href="javascript:void(0);" id="C1F" title="1F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>식자재 매장</a></div></li><li class="mT30"><h5>가락몰4관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="B3F" title="3F 팔도특산품 홍보 판매장 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>팔도특산품 홍보 판매장</a><a href="javascript:void(0);" id="B2F" title="2F 팔도특산품 홍보 판매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>팔도특산품 홍보 판매장</a><a href="javascript:void(0);" id="B1F" title="1F 팔도특산품 홍보 판매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>팔도특산품 홍보 판매장</a><a href="javascript:void(0);" id="BB1" title="B1 먹거리광장 검색 결과 목록으로 이동 합니다."><span>B1&nbsp;</span>먹거리광장</a></div></li><li class="mT30"><h5>가락몰5관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="A3F" title="3F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="A2F" title="2F 수산 전문점 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>수산 전문점</a><a href="javascript:void(0);" id="A1F" title="1F 회센터 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>회센터</a></div></li><li class="mT30"><h5>업무동</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="F5F" title="5F 의료시설 검색 결과 목록으로 이동 합니다."><span>5F&nbsp;</span>의료시설</a><a href="javascript:void(0);" id="F4F" title="4F 도서관 검색 결과 목록으로 이동 합니다."><span>4F&nbsp;</span>도서관</a><a href="javascript:void(0);" id="F3F" title="3F 보육시설 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>보육시설</a><a href="javascript:void(0);" id="F2F" title="2F 컨벤션센터 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>컨벤션센터</a><a href="javascript:void(0);" id="F1F" title="1F 금융시설등 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>금융시설등</a></div></li><li class="mT30"><h5 style="visibility: hidden;">업무동2</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="F10F" title="10F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>10F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F9F" title="9F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>9F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F8F" title="8F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>8F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F7F" title="7F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>7F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F6F" title="6F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>6F&nbsp;</span>임대 사무실</a></div></li><li class="mT30"><h5 style="visibility: hidden;">업무동3</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="F18F" title="18F 스카이라운지 검색 결과 목록으로 이동 합니다."><span>18F&nbsp;</span>스카이라운지</a><a href="javascript:void(0);" id="F14F-17F" title="14F-17F 서울시농수산식품공사 검색 결과 목록으로 이동 합니다."><span>14F-17F&nbsp;</span>서울시농수산식품공사</a><a href="javascript:void(0);" id="F13F" title="13F 내방객안내실 등 검색 결과 목록으로 이동 합니다."><span>13F&nbsp;</span>내방객안내실 등</a><a href="javascript:void(0);" id="F12F" title="12F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>12F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F11F" title="11F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>11F&nbsp;</span>임대 사무실</a></div></li></ul>
+                    </div>
+
+                  </div>
+                  <!--/ Modal Structure -->
+                  </div>
+                  <div class="col l4 s12">
+                    &nbsp;
+                  </div>
+                </div>
+                <!--/필터영역-->
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div id="sub_contents">
+                  <div class="floor_mall_wrap">
+                      <div class="floor_img">
+                        <img src="images/w/floor_img.png" title="가락몰 층별안내 조감도" alt="가락몰 동별 시설안내 이미지 입니다. 가락몰 업무동,판매동,가락몰1관,가락몰2관,가락몰3관,가락몰4관,가락몰5관">
+                      </div>
+                      <div class="mall_bg_img">
+                        <img src="images/w/mall_hover_01.png" class="mall_bg_img01" title="가락몰 5관" alt="가락몰 5관 선택영역">
+                        <img src="images/w/mall_hover_02.png" class="mall_bg_img02 on" title="판매동 선택영역" alt="판매동 선택영역">
+                        <img src="images/w/mall_hover_03.png" class="mall_bg_img03" title="업무동 선택영역" alt="업무동 선택영역">
+                        <img src="images/w/mall_hover_04.png" class="mall_bg_img04" title="가락몰 4관" alt="가락몰 4관 선택영역">
+                        <img src="images/w/mall_hover_05.png" class="mall_bg_img05" title="가락몰 3관" alt="가락몰 3관 선택영역">
+                        <img src="images/w/mall_hover_06.png" class="mall_bg_img06" title="가락몰 2관" alt="가락몰 2관 선택영역">
+                        <img src="images/w/mall_hover_07.png" class="mall_bg_img07" title="가락몰 1관" alt="가락몰 1관 선택영역">
+                      </div>
+                      <div class="mall_btn_wrap">
+                        <a href="javascript:void(0);" title="5관" class="mall_btn mall_btn_01" id="A">5관</a>
+                        <a href="javascript:void(0);" title="판매동" class="mall_btn mall_btn_02 on" id="G">판매동</a>
+                        <a href="javascript:void(0);" title="업무동" class="mall_btn mall_btn_03" id="F">업무동</a>
+                        <a href="javascript:void(0);" title="4관" class="mall_btn mall_btn_04" id="B">4관</a>
+                        <a href="javascript:void(0);" title="3관" class="mall_btn mall_btn_05" id="C">3관</a>
+                        <a href="javascript:void(0);" title="2관" class="mall_btn mall_btn_06" id="D">2관</a>
+                        <a href="javascript:void(0);" title="1관" class="mall_btn mall_btn_07" id="E">1관</a>
+                      </div>
+                    </div>
+                  <!-- 로딩이미지 -->
+                    <div class="loading_img" style="padding: 80px 350px; position: absolute; display: none;"><!-- <p style="font-size:80%">불러오는중</p> --><img src="images/w/loading.gif" alt="층별안내를 불러오는 중입니다.. 잠시만 기다려주세요." title="층별안내를 불러오는 중입니다.. 잠시만 기다려주세요."></div>
+                    <!-- 로딩이미지 -->
+                  <div class="main_mall_wrap">
+                    <div class="mall-wrap">
+                      <div class="mall_img mT20">
+                        <div class="main_mall_img">
+                          <img src="images/img_garak-mall_img.png" title="가락몰 조감도" alt="가락몰 업무동,판매동,가락몰1관,가락몰2관,가락몰3관,가락몰4관,가락몰5관">
+                        </div>
+                      </div>
+                      <div class="mall_hover_img">
+                        <div class="mall_hover_01"><img src="images/w/mall_hover_01.png" title="가락몰 5관" alt="가락몰 5관 선택영역"></div>
+                        <div class="mall_hover_02"><img src="images/w/mall_hover_02.png" title="판매동 선택영역" alt="판매동 선택영역"></div>
+                        <div class="mall_hover_03 on"><img src="images/w/mall_hover_03.png" title="업무동 선택영역" alt="업무동 선택영역"></div>
+                        <div class="mall_hover_04"><img src="images/w/mall_hover_04.png" title="가락몰 4관" alt="가락몰 4관 선택영역"></div>
+                        <div class="mall_hover_05"><img src="images/w/mall_hover_05.png" title="가락몰 3관" alt="가락몰 3관 선택영역"></div>
+                        <div class="mall_hover_06"><img src="images/w/mall_hover_06.png" title="가락몰 2관" alt="가락몰 2관 선택영역"></div>
+                        <div class="mall_hover_07"><img src="images/w/mall_hover_07.png" title="가락몰 1관" alt="가락몰 1관 선택영역"></div>
+                      </div>
+                      <div class="mall_hover_color_img">
+                        <div class="mall_hover_color_01"><img src="images/w/mall_hover_1.png" title="가락몰 5관" alt="가락몰 5관 선택영역"></div>
+                        <div class="mall_hover_color_02"><img src="images/w/mall_hover_2.png" title="판매동 선택영역" alt="판매동 선택영역"></div>
+                        <div class="mall_hover_color_03"><img src="images/w/mall_hover_3.png" title="업무동 선택영역" alt="업무동 선택영역"></div>
+                        <div class="mall_hover_color_04"><img src="images/w/mall_hover_4.png" title="가락몰 4관" alt="가락몰 4관 선택영역"></div>
+                        <div class="mall_hover_color_05"><img src="images/w/mall_hover_5.png" title="가락몰 3관" alt="가락몰 3관 선택영역"></div>
+                        <div class="mall_hover_color_06"><img src="images/w/mall_hover_6.png" title="가락몰 2관" alt="가락몰 2관 선택영역"></div>
+                        <div class="mall_hover_color_07"><img src="images/w/mall_hover_7.png" title="가락몰 1관" alt="가락몰 1관 선택영역"></div>
+                      </div>
+                      <div class="mall_btn_wrap">
+                        <a href="javascript:void(0);" title="가락몰 5관" class="mall_btn mall_btn_01 click_on" id="A">가락몰 5관</a>
+                        <a href="javascript:void(0);" title="판매동" class="mall_btn mall_btn_02" id="G">판매동</a>
+                        <a href="javascript:void(0);" title="업무동" class="mall_btn mall_btn_03" id="F">업무동</a>
+                        <a href="javascript:void(0);" title="가락몰 4관" class="mall_btn mall_btn_04" id="B">가락몰 4관</a>
+                        <a href="javascript:void(0);" title="가락몰 3관" class="mall_btn mall_btn_05" id="C">가락몰 3관</a>
+                        <a href="javascript:void(0);" title="가락몰 2관" class="mall_btn mall_btn_06" id="D">가락몰 2관</a>
+                        <a href="javascript:void(0);" title="가락몰 1관" class="mall_btn mall_btn_07" id="E">가락몰 1관</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="floor_list">
+                    <!-- 층별구성 -->
+                    <ul class="floor_contents" style="display:none;">
+                    <li class="mT30"><h5>판매동</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="G3F" title="3F 식당가 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>식당가</a><a href="javascript:void(0);" id="G2F" title="2F 식자재 매장.청과시장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>식자재 매장.청과시장</a><a href="javascript:void(0);" id="G1F" title="1F 수산시장,축산시장:건어시장:젓갈시장,휴게실(매점) 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>수산시장,축산시장<br>건어시장<br>젓갈시장,휴게실(매점)</a><a href="javascript:void(0);" id="GB1" title="B1 청과부류.휴게실(매점) 검색 결과 목록으로 이동 합니다."><span>B1&nbsp;</span>청과부류.휴게실(매점)</a><a href="javascript:void(0);" id="GB2" title="B2 축산부산물시장 검색 결과 목록으로 이동 합니다."><span>B2&nbsp;</span>축산부산물시장</a></div></li><li class="mT30"><h5>가락몰1관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="E3F" title="3F 스타트업 센터 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>스타트업 센터</a><a href="javascript:void(0);" id="E2F" title="2F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="E1F" title="1F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>식자재 매장</a></div></li><li class="mT30"><h5>가락몰2관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="D3F" title="3F 스타트업 센터 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>스타트업 센터</a><a href="javascript:void(0);" id="D2F" title="2F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="D1F" title="1F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>식자재 매장</a></div></li><li class="mT30"><h5>가락몰3관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="C3F" title="3F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="C2F" title="2F 친환경 매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>친환경 매장</a><a href="javascript:void(0);" id="C1F" title="1F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>식자재 매장</a></div></li><li class="mT30"><h5>가락몰4관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="B3F" title="3F 팔도특산품 홍보 판매장 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>팔도특산품 홍보 판매장</a><a href="javascript:void(0);" id="B2F" title="2F 팔도특산품 홍보 판매장 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>팔도특산품 홍보 판매장</a><a href="javascript:void(0);" id="B1F" title="1F 팔도특산품 홍보 판매장 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>팔도특산품 홍보 판매장</a><a href="javascript:void(0);" id="BB1" title="B1 먹거리광장 검색 결과 목록으로 이동 합니다."><span>B1&nbsp;</span>먹거리광장</a></div></li><li class="mT30"><h5>가락몰5관</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="A3F" title="3F 식자재 매장 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>식자재 매장</a><a href="javascript:void(0);" id="A2F" title="2F 수산 전문점 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>수산 전문점</a><a href="javascript:void(0);" id="A1F" title="1F 회센터 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>회센터</a></div></li><li class="mT30"><h5>업무동</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="F5F" title="5F 의료시설 검색 결과 목록으로 이동 합니다."><span>5F&nbsp;</span>의료시설</a><a href="javascript:void(0);" id="F4F" title="4F 도서관 검색 결과 목록으로 이동 합니다."><span>4F&nbsp;</span>도서관</a><a href="javascript:void(0);" id="F3F" title="3F 보육시설 검색 결과 목록으로 이동 합니다."><span>3F&nbsp;</span>보육시설</a><a href="javascript:void(0);" id="F2F" title="2F 컨벤션센터 검색 결과 목록으로 이동 합니다."><span>2F&nbsp;</span>컨벤션센터</a><a href="javascript:void(0);" id="F1F" title="1F 금융시설등 검색 결과 목록으로 이동 합니다."><span>1F&nbsp;</span>금융시설등</a></div></li><li class="mT30"><h5 style="visibility: hidden;">업무동2</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="F10F" title="10F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>10F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F9F" title="9F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>9F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F8F" title="8F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>8F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F7F" title="7F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>7F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F6F" title="6F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>6F&nbsp;</span>임대 사무실</a></div></li><li class="mT30"><h5 style="visibility: hidden;">업무동3</h5><div class="floor_sub_list"><a href="javascript:void(0);" id="F18F" title="18F 스카이라운지 검색 결과 목록으로 이동 합니다."><span>18F&nbsp;</span>스카이라운지</a><a href="javascript:void(0);" id="F14F-17F" title="14F-17F 서울시농수산식품공사 검색 결과 목록으로 이동 합니다."><span>14F-17F&nbsp;</span>서울시농수산식품공사</a><a href="javascript:void(0);" id="F13F" title="13F 내방객안내실 등 검색 결과 목록으로 이동 합니다."><span>13F&nbsp;</span>내방객안내실 등</a><a href="javascript:void(0);" id="F12F" title="12F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>12F&nbsp;</span>임대 사무실</a><a href="javascript:void(0);" id="F11F" title="11F 임대 사무실 검색 결과 목록으로 이동 합니다."><span>11F&nbsp;</span>임대 사무실</a></div></li></ul>
+                    <a href="javascript:void(0);" title="층별구성 닫기" class="floor_btn text_hidden hidden">층별구성 닫기</a>
+                    <!-- 층별구성 -->
+                  </div>
+               
+                  <!-- start : 판매동 -->
+                  <div class="floor_sale_shop">
+                    <div class="floor_select_wrap">
+                      <div class="select_img">
+                        <!-- B2 영역 -->
+                        <div class="select_map_img img_B2 on">
+                            <h5>판매동 B2</h5>
+                          <img src="images/w/map/G_B2_all.png" title="판매동 B2구역 시설안내도" alt="판매동 B2구역 시설안내도 - 창고,축산,식품상가냉동창고,건어부류냉동창고,수산부류냉동창고,젓갈부류냉동창고,축산부류냉동창고,청과부류냉동창고가공처리장 등이 있고,장애인화장실,화장실,에스컬레이터,엘리베이터가 있습니다. 상단 좌우측 엘리베이터가 있습니다.">
+                          <div class="check_img">
+                            <img src="images/w/map/G_B2_select_A.png" class="G_B2_A_select on" title="A 선택영역" alt="판매동 지하2층 A 선택영역">
+                          </div>
+                          <div class="check_btn">
+                            <a href="javascript:void(0);" title="A구역" class="G_B2_A_btn on">A</a>
+                          </div>
+                          
+                        </div>
+          
+                        <!-- B1 영역 -->
+                        <div class="select_map_img img_B1">
+                            <h5>판매동 B1</h5>
+                          <img src="images/w/map/G_B1_all.png" title="판매동 B1구역 시설안내도" alt="판매동 B1구역 시설안내도 - 채소/과일,편의시설,식품/식자재 가 있고, 장애인화장실,화장실,에스컬레이터,엘리베이터가 있습니다. 상단 좌우측 엘리베이터가 있습니다.">
+                          <div class="check_img">
+                            <img src="images/w/map/G_B1_select_A1.png" class="G_B1_A-1_select on" title="A-1선택영역" alt="판매동 지하1층 A-1 선택영역">
+                            <img src="images/w/map/G_B1_select_A2.png" class="G_B1_A-2_select" title="A-1선택영역" alt="판매동 지하1층 A-2 선택영역">
+                            <img src="images/w/map/G_B1_select_B.png" class="G_B1_B_select" title="A-1선택영역" alt="판매동 지하1층 B 선택영역">
+                            <img src="images/w/map/G_B1_select_C1.png" class="G_B1_C-1_select" title="A-1선택영역" alt="판매동 지하1층 C-1 선택영역">
+                            <img src="images/w/map/G_B1_select_C2.png" class="G_B1_C-2_select" title="A-1선택영역" alt="판매동 지하1층 C-2 선택영역">
+                            <img src="images/w/map/G_B1_select_D.png" class="G_B1_D_select" title="A-1선택영역" alt="판매동 지하1층 D 선택영역">
+                            <img src="images/w/map/G_B1_select_E.png" class="G_B1_E_select" title="A-1선택영역" alt="판매동 지하1층 E 선택영역">
+                            <img src="images/w/map/G_B1_select_F1.png" class="G_B1_F-1_select" title="A-1선택영역" alt="판매동 지하1층 F-1 선택영역">
+                            <img src="images/w/map/G_B1_select_F2.png" class="G_B1_F-2_select" title="A-1선택영역" alt="판매동 지하1층 F-2 선택영역">
+                            <img src="images/w/map/G_B1_select_G1.png" class="G_B1_G-1_select" title="A-1선택영역" alt="판매동 지하1층 G-1 선택영역">
+                            <img src="images/w/map/G_B1_select_G2.png" class="G_B1_G-2_select" title="A-1선택영역" alt="판매동 지하1층 G-2 선택영역">
+                            <img src="images/w/map/G_B1_select_H1.png" class="G_B1_H-1_select" title="A-1선택영역" alt="판매동 지하1층 H-1 선택영역">
+                            <img src="images/w/map/G_B1_select_H2.png" class="G_B1_H-2_select" title="A-1선택영역" alt="판매동 지하1층 H-2 선택영역">
+                          </div>
+                          <div class="hover_img">
+                            <img src="images/w/map/G_B1_hover_A1.png" class="G_B1_A-1_hover" title="A-1선택영역" alt="판매동 지하1층 A-1 선택영역">
+                            <img src="images/w/map/G_B1_hover_A2.png" class="G_B1_A-2_hover" title="A-1선택영역" alt="판매동 지하1층 A-2 선택영역">
+                            <img src="images/w/map/G_B1_hover_B.png" class="G_B1_B_hover" title="A-1선택영역" alt="판매동 지하1층 B 선택영역">
+                            <img src="images/w/map/G_B1_hover_C1.png" class="G_B1_C-1_hover" title="A-1선택영역" alt="판매동 지하1층 C-1 선택영역">
+                            <img src="images/w/map/G_B1_hover_C2.png" class="G_B1_C-2_hover" title="A-1선택영역" alt="판매동 지하1층 C-2 선택영역">
+                            <img src="images/w/map/G_B1_hover_D.png" class="G_B1_D_hover" title="A-1선택영역" alt="판매동 지하1층 D 선택영역">
+                            <img src="images/w/map/G_B1_hover_E.png" class="G_B1_E_hover" title="A-1선택영역" alt="판매동 지하1층 E 선택영역">
+                            <img src="images/w/map/G_B1_hover_F1.png" class="G_B1_F-1_hover" title="A-1선택영역" alt="판매동 지하1층 F-1 선택영역">
+                            <img src="images/w/map/G_B1_hover_F2.png" class="G_B1_F-2_hover" title="A-1선택영역" alt="판매동 지하1층 F-2 선택영역">
+                            <img src="images/w/map/G_B1_hover_G1.png" class="G_B1_G-1_hover" title="A-1선택영역" alt="판매동 지하1층 G-1 선택영역">
+                            <img src="images/w/map/G_B1_hover_G2.png" class="G_B1_G-2_hover" title="A-1선택영역" alt="판매동 지하1층 G-2 선택영역">
+                            <img src="images/w/map/G_B1_hover_H1.png" class="G_B1_H-1_hover" title="A-1선택영역" alt="판매동 지하1층 H-1 선택영역">
+                            <img src="images/w/map/G_B1_hover_H2.png" class="G_B1_H-2_hover" title="A-1선택영역" alt="판매동 지하1층 H-2 선택영역">
+                          </div>                
+                          <div class="check_btn">
+                            <a href="javascript:void(0);" title="A-1구역" id="B1_A-1" class="G_B1_A-1_btn on">A-1</a>
+                            <a href="javascript:void(0);" title="A-2구역" id="B1_A-2" class="G_B1_A-2_btn">A-2</a>
+                            <a href="javascript:void(0);" title="B구역" id="B1_B" class="G_B1_B_btn">B</a>
+                            <a href="javascript:void(0);" title="C-1구역" id="B1_C-1" class="G_B1_C-1_btn">C-1</a>
+                            <a href="javascript:void(0);" title="C-2구역" id="B1_C-2" class="G_B1_C-2_btn">C-2</a>
+                            <a href="javascript:void(0);" title="D구역" id="B1_D" class="G_B1_D_btn">D</a>
+                            <a href="javascript:void(0);" title="E구역" id="B1_E" class="G_B1_E_btn">E</a>
+                            <a href="javascript:void(0);" title="F-1구역" id="B1_F-1" class="G_B1_F-1_btn">F-1</a>
+                            <a href="javascript:void(0);" title="F-2구역" id="B1_F-2" class="G_B1_F-2_btn">F-2</a>
+                            <a href="javascript:void(0);" title="G-1구역" id="B1_G-1" class="G_B1_G-1_btn">G-1</a>
+                            <a href="javascript:void(0);" title="G-2구역" id="B1_G-2" class="G_B1_G-2_btn">G-2</a>
+                            <a href="javascript:void(0);" title="H-1구역" id="B1_H-1" class="G_B1_H-1_btn">H-1</a>
+                            <a href="javascript:void(0);" title="H-2구역" id="B1_H-2" class="G_B1_H-2_btn">H-2</a>
+                          </div>
+                        </div>
+          
+                        <!-- 1F 영역 -->
+                        <div class="select_map_img img_1F">
+                            <h5>판매동 1F</h5>
+                          <img src="images/w/map/G_F1_all.png" title="판매동 1F구역 시설안내도" alt="판매동 1F구역 시설안내도 - 수산,건해,축산이 있고, 장애인화장실,화장실,에스컬레이터,엘리베이터가 있습니다. 상단 좌우측장애인 화장실이 있습니다.">
+                          <div class="check_img">
+                            <img src="images/w/map/G_1F_select_A.png" class="G_1F_A_select on" title="A 선택영역" alt="판매동 지상1층 A 선택영역">
+                            <img src="images/w/map/G_1F_select_B.png" class="G_1F_B_select" title="B 선택영역" alt="판매동 지상1층 B 선택영역">
+                            <img src="images/w/map/G_1F_select_C.png" class="G_1F_C_select" title="C 선택영역" alt="판매동 지상1층 C 선택영역">
+                            <img src="images/w/map/G_1F_select_D.png" class="G_1F_D_select" title="D 선택영역" alt="판매동 지상1층 D 선택영역">
+                            <img src="images/w/map/G_1F_select_E.png" class="G_1F_E_select" title="E 선택영역" alt="판매동 지상1층 E 선택영역">
+                            <img src="images/w/map/G_1F_select_F.png" class="G_1F_F_select" title="F 선택영역" alt="판매동 지상1층 F 선택영역">
+                          </div>
+                          <div class="hover_img">
+                            <img src="images/w/map/G_1F_hover_A.png" class="G_1F_A_hover" title="A 선택영역" alt="판매동 지상1층 A 선택영역">
+                            <img src="images/w/map/G_1F_hover_B.png" class="G_1F_B_hover" title="B 선택영역" alt="판매동 지상1층 B 선택영역">
+                            <img src="images/w/map/G_1F_hover_C.png" class="G_1F_C_hover" title="C 선택영역" alt="판매동 지상1층 C 선택영역">
+                            <img src="images/w/map/G_1F_hover_D.png" class="G_1F_D_hover" title="D 선택영역" alt="판매동 지상1층 D 선택영역">
+                            <img src="images/w/map/G_1F_hover_E.png" class="G_1F_E_hover" title="E 선택영역" alt="판매동 지상1층 E 선택영역">
+                            <img src="images/w/map/G_1F_hover_F.png" class="G_1F_F_hover" title="F 선택영역" alt="판매동 지상1층 F 선택영역">
+                          </div>                
+                          <div class="check_btn">
+                            <a href="javascript:void(0);" title="A구역" id="1F_A" class="G_1F_A_btn on">A</a>
+                            <a href="javascript:void(0);" title="B구역" id="1F_B" class="G_1F_B_btn">B</a>
+                            <a href="javascript:void(0);" title="C구역" id="1F_C" class="G_1F_C_btn">C</a>
+                            <a href="javascript:void(0);" title="D구역" id="1F_D" class="G_1F_D_btn">D</a>
+                            <a href="javascript:void(0);" title="E구역" id="1F_E" class="G_1F_E_btn">E</a>
+                            <a href="javascript:void(0);" title="F구역" id="1F_F" class="G_1F_F_btn">F</a>
+                          </div>
+                        </div>
+          
+                        <!-- 2F 영역 -->
+                        <div class="select_map_img img_2F">
+                          <h5>판매동 2F</h5>
+                          <img src="images/w/map/G_F2_all.png" title="판매동 2F구역 시설안내도" alt="판매동 2F구역 시설안내도 - 수협/신협,식품/식자재가 있고,장애인화장실,화장실,에스컬레이터,엘리베이터가 있습니다. 상단 좌우측 장애인화장실이 있습니다.">
+                          <div class="check_img">
+                            <img src="images/w/map/G_2F_select_A.png" class="G_2F_A_select on" title="A 선택영역" alt="판매동 지상2층 A 선택영역">
+                            <img src="images/w/map/G_2F_select_B.png" class="G_2F_B_select" title="B 선택영역" alt="판매동 지상2층 B 선택영역">
+                            <img src="images/w/map/G_2F_select_C.png" class="G_2F_C_select" title="C 선택영역" alt="판매동 지상2층 C 선택영역">
+                          </div>
+                          <div class="hover_img">
+                            <img src="images/w/map/G_2F_hover_A.png" class="G_2F_A_hover" title="A 선택영역" alt="판매동 지상2층 A 선택영역">
+                            <img src="images/w/map/G_2F_hover_B.png" class="G_2F_B_hover" title="B 선택영역" alt="판매동 지상2층 B 선택영역">
+                            <img src="images/w/map/G_2F_hover_C.png" class="G_2F_C_hover" title="C 선택영역" alt="판매동 지상2층 C 선택영역">
+                          </div>                
+                          <div class="check_btn">
+                            <a href="javascript:void(0);" title="A구역" id="2F_A" class="G_2F_A_btn on">A</a>
+                            <a href="javascript:void(0);" title="B구역" id="2F_B" class="G_2F_B_btn">B</a>
+                            <a href="javascript:void(0);" title="C구역" id="2F_C" class="G_2F_C_btn">C</a>
+                          </div>
+                        </div>
+          
+                        <!-- 3F 영역 -->
+                        <div class="select_map_img img_3F">
+                            <h5>판매동 3F</h5>
+                          <img src="images/w/map/G_3F_all.png" title="판매동 3F구역 시설안내도" alt="판매동 3F구역 시설안내도 - G730011, G730021, G730031, G730041, G730051, G730061, G730071, G730081, G730091, G730121, G730141, G730151, G730161, G730171, G730181, G730191호 전문식당가 가 있습니다. 화장실,에스컬레이터,엘리베이터가 있고, 상단 좌측 화장실과, 상단우측 엘리베이터가 있습니다.">
+                         
+                        </div>
+                      </div>
+                     
+                    </div>
+          
+                    <!-- 판매동 상세이미지 맵 -->
+                    <div class="floor_map" style="display: block;">
+                      <div class="select_img map">
+                        <img title="판매동 B2층 A구역 시설안내도" alt="가락몰 5관 1F층 상세 이미지 : 가락몰 5관 지상1층 시설안내도 - 가락몰 5관 지상1층에 1호부터 19호까지 회센터가 있습니다." src="images/w/map/A_1F_all.png">
+                       
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <!-- end : 판매동 -->
+          
+                  <div class="floor_shop on">
+                    <div class="floor_select_wrap">
+                      <div class="select_img pt-3">
+                        <h5>가락몰 5관 1F</h5>
+                        <ul class="scale_wrap">
+                          <li><a href="#"><i class="material-icons">add</i></a></li>
+                          <li><a href="#"><i class="material-icons">remove</i></a></li>
+                        </ul>
+                        <img alt="가락몰 5관 1F층 상세 이미지 : 가락몰 5관 지상1층 시설안내도 - 가락몰 5관 지상1층에 1호부터 19호까지 회센터가 있습니다." title="가락몰 구역별 상세 지도 도면" src="images/w/map/A_1F_all.png">
+                        
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <!--상세검색 필터-->
+                  <script>
+                     $(document).ready(function() {
+                        $('.open-detail').on('click', function() {
+                            // .search_detail을 토글합니다.
+                            $('.search_detail').toggle();
+
+                            // .open-detail 내부의 <i> 태그를 회전시킵니다.
+                            $(this).find('img').toggleClass('rotated');
+                        });
+                    });
+                  </script>
+
+                  <div class="col l12 s12 filter-detail flex contents-inner mb-3">
+                    <div class="store_search mT20">
+                      <div class="search_input col l12 s12">
+                    
+                        <div class="input-wrap flex mt-5 mb-3">
+                          <div class="wrap01 flex mo-flex mb-sm-3">
+                            <input type="text" class="search_text" title="검색어를 입력하세요." placeholder="찾고싶으신 매장 또는 주요시설을 검색해보세요">
+                          <a href="javascript:void(0);" title="검색하기" class="btn_search mr-lg-2"><span class="blind">검색 버튼</span><i class="material-icons">search</i></a>
+                          </div>
+                          <a class="open-detail btn white flex btn_outlined mb-sm-3" tabindex="0">상세검색<img src="images/arr_down_grey.svg" alt="아래아이콘" style="width: 1.2rem;"></a>
+                          <a class="tooltipped flex body-2 grey-text ml-lg-2" data-position="bottom" data-tooltip="I am a tooltip" tabindex="0"><i class="material-icons grey-text mr-1">info</i>도움말</a>
+                        </div>
+                        
+
+                        <a href="javascript:void(0);" title="상세목록 열기" class="btn_list btn_list_open mL3 on" style="display: none;">상세<span>▼</span></a>
+                        <div class="search_detail col l12 s12">
+                          <h4>취급부류별</h4>
+                          <ul class="fctyclss"><li class="on" id="all"><a href="javascript:void(0);" title="가락몰 취급부류별 전체을 합니다.">전체</a></li><li class="" id="4006"><a href="javascript:void(0);" title="편의시설 검색 결과 목록으로 합니다.">편의시설</a></li><li class="" id="4001"><a href="javascript:void(0);" title="청과부류 검색 결과 목록으로 합니다.">청과부류</a></li><li class="" id="4002"><a href="javascript:void(0);" title="수산부류 검색 결과 목록으로 합니다.">수산부류</a></li><li class="" id="4003"><a href="javascript:void(0);" title="건해부류 검색 결과 목록으로 합니다.">건해부류</a></li><li class="" id="4004"><a href="javascript:void(0);" title="축산부류 검색 결과 목록으로 합니다.">축산부류</a></li><li class="" id="4005"><a href="javascript:void(0);" title="판매시설 검색 결과 목록으로 합니다.">판매시설</a></li></ul>
+                          <div class="fctyusediv" style="display:none;">
+                            <h4>시설분류별</h4>
+                            <ul class="facilities_list fctyuse"><li class="on" id="all"><a href="javascript:void(0);" title="가락몰 시설분류별 전체을 합니다.">전체</a></li><li class="" id="4111"><a href="javascript:void(0);" title="회센터 검색 결과 목록으로 합니다.">회센터</a></li><li class="" id="4112"><a href="javascript:void(0);" title="식당 검색 결과 목록으로 합니다.">식당</a></li><li class="" id="4123"><a href="javascript:void(0);" title="식음시설 검색 결과 목록으로 합니다.">식음시설</a></li><li class="" id="4113"><a href="javascript:void(0);" title="병원 검색 결과 목록으로 합니다.">병원</a></li><li class="" id="4114"><a href="javascript:void(0);" title="약국 검색 결과 목록으로 합니다.">약국</a></li><li class="" id="4115"><a href="javascript:void(0);" title="은행 검색 결과 목록으로 합니다.">은행</a></li><li class="" id="4116"><a href="javascript:void(0);" title="웨딩홀 검색 결과 목록으로 합니다.">웨딩홀</a></li><li class="" id="4117"><a href="javascript:void(0);" title="휴게매점 검색 결과 목록으로 합니다.">휴게매점</a></li><li class="" id="4199"><a href="javascript:void(0);" title="기타 검색 결과 목록으로 합니다.">기타</a></li><li class="" id="4102"><a href="javascript:void(0);" title="채소류 검색 결과 목록으로 합니다.">채소류</a></li><li class="" id="4103"><a href="javascript:void(0);" title="과일류 검색 결과 목록으로 합니다.">과일류</a></li><li class="" id="4104"><a href="javascript:void(0);" title="수산류 검색 결과 목록으로 합니다.">수산류</a></li><li class="" id="4105"><a href="javascript:void(0);" title="젓갈류 검색 결과 목록으로 합니다.">젓갈류</a></li><li class="" id="4106"><a href="javascript:void(0);" title="건어류 검색 결과 목록으로 합니다.">건어류</a></li><li class="" id="4107"><a href="javascript:void(0);" title="축산류 검색 결과 목록으로 합니다.">축산류</a></li><li class="" id="4108"><a href="javascript:void(0);" title="축산부산물 검색 결과 목록으로 합니다.">축산부산물</a></li><li class="" id="4109"><a href="javascript:void(0);" title="식가공 검색 결과 목록으로 합니다.">식가공</a></li><li class="" id="4110"><a href="javascript:void(0);" title="잡화 검색 결과 목록으로 합니다.">잡화</a></li><li class="" id="4199"><a href="javascript:void(0);" title="기타 검색 결과 목록으로 합니다.">기타</a></li></ul>
+                          </div>
+                          <h4>동별</h4>
+                          <ul class="fctydong"><li class="on" id="all"><a href="javascript:void(0);" title="가락몰 동별 전체 검색을 합니다.">전체</a></li><li class="" id="G"><a href="javascript:void(0);" title="판매동 검색 결과 목록으로 이동 합니다.">판매동</a></li><li class="" id="E"><a href="javascript:void(0);" title="가락몰1관 검색 결과 목록으로 이동 합니다.">가락몰1관</a></li><li class="" id="D"><a href="javascript:void(0);" title="가락몰2관 검색 결과 목록으로 이동 합니다.">가락몰2관</a></li><li class="" id="C"><a href="javascript:void(0);" title="가락몰3관 검색 결과 목록으로 이동 합니다.">가락몰3관</a></li><li class="" id="B"><a href="javascript:void(0);" title="가락몰4관 검색 결과 목록으로 이동 합니다.">가락몰4관</a></li><li class="" id="A"><a href="javascript:void(0);" title="가락몰5관 검색 결과 목록으로 이동 합니다.">가락몰5관</a></li><li class="" id="F"><a href="javascript:void(0);" title="업무동 검색 결과 목록으로 이동 합니다.">업무동</a></li></ul>
+                         <div class="btn-wrap">
+                          <a href="#" class="btn right orange mt-3 mb-3 col l2 s12" tabindex="0">검색</a>
+                         </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!--/상세검색-->
+                  <div class="sub_search col s12">
+                    <div class="list_view">
+                      <ul class="search_list_view">
+                        <li class="view_03 on" id="card_type_bt"><a href="javascript:void(0);" title="카드형 리스트 보기" class="text_hidden">카드형 리스트</a></li>
+                        <li class="view_02" id="thumb_type_bt"><a href="javascript:void(0);" title="썸네일형 리스트 보기" class="text_hidden">썸네일형 리스트</a></li>
+                        <li class="view_01" id="list_type_bt"><a href="javascript:void(0);" title="리스트형 리스트 보기" class="text_hidden">리스트형 리스트</a></li>
+                      </ul>
+                    </div>
+                    <div class="search_padding"></div>
+                  </div>
+                  
+                  <!--카드형 리스트-->
+                  <div class="border_wrap">
+                      <div id="card_type_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_info" id="card_type_info" role="status" aria-live="polite"><p><span class="disable_guide_use"> 가락몰 5관 1F</span> <span>15</span>개  매장이 <span class="disable_guide_type">카드형 리스트로</span> 검색되었습니다.</p> </div><table class="card_table dataTable no-footer" id="card_type" aria-describedby="card_type_info" role="grid">
+
+                              <thead style="display:none" id="card_head">
+                                  <tr id="card_head_tr" role="row"><td scope="col" class="sorting_disabled" rowspan="1" colspan="1">매장명</td></tr>
+                              </thead>
+                          <tbody id="card_body"><tr class="card_list flex"><td><a href="/fcty/U010/read/floor.do?fcty_id=A710011" title="선우회센터 상세보기" class="go_read"><img src="images/upload/fcty/A710011/thumb_400/20170119012214935.JPG" title="가락몰5관 1층 선우회센터입니다." alt="가락몰5관 1층 선우회센터입니다." width="400px" height="200px"><h4>선우회센터</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 1호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>02-6978-1200</p></a></td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710021" title="수동상회 상세보기" class="go_read"><img src="images/upload/fcty/A710021/thumb_400/20170104014034425.jpg" title="가락몰5관 1층 수동상회입니다." alt="가락몰5관 1층 수동상회입니다." width="400px" height="200px"><h4>수동상회</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 2호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>02-403-1767</p></a></td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710041" title="해남수산 상세보기" class="go_read"><img src="images/upload/fcty/A710041/thumb_400/20201120021229235.jpg" title="해남수산 썸네일 이미지 입니다." alt="해남수산 썸네일 이미지 입니다." width="400px" height="200px"><h4>해남수산</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 3호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>407-4195</p></a></td></tr><tr class="card_list flex"><td><a href="/fcty/U010/read/floor.do?fcty_id=A710051" title="고흥상회 상세보기" class="go_read"><img src="images/upload/fcty/A710051/thumb_400/20201120021441842.jpg" title="고흥상회 썸네일 이미지 입니다." alt="고흥상회 썸네일 이미지 입니다." width="400px" height="200px"><h4>고흥상회</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 5호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>02-407-7463</p></a></td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710071" title="(유)성광수산 상세보기" class="go_read"><img src="images/upload/fcty/A710071/thumb_400/20201120021547005.jpg" title="(유)성광수산 썸네일 이미지 입니다." alt="(유)성광수산 썸네일 이미지 입니다." width="400px" height="200px"><h4>(유)성광수산</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 7호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>407-7463</p></a></td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710081" title="채원수산 상세보기" class="go_read"><img src="images/upload/fcty/A710081/thumb_400/20210608111805216.JPG" title="채원수산 썸네일 이미지 입니다." alt="채원수산 썸네일 이미지 입니다." width="400px" height="200px"><h4>채원수산</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 8호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>6978-1200</p></a></td></tr><tr class="card_list flex"><td><a href="/fcty/U010/read/floor.do?fcty_id=A710091" title="(유)대양수산 상세보기" class="go_read"><img src="images/upload/fcty/A710091/thumb_400/20210608111925119.JPG" title="(유)대양수산 썸네일 이미지 입니다." alt="(유)대양수산 썸네일 이미지 입니다." width="400px" height="200px"><h4>(유)대양수산</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 9호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>407-7463</p></a></td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710101" title="(유)백운횟집 상세보기" class="go_read"><img src="images/upload/fcty/A710101/thumb_400/20170104021801161.jpg" title="가락몰 5관 1층 백운수산 입니다." alt="가락몰 5관 1층 백운수산 입니다." width="400px" height="200px"><h4>(유)백운횟집</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 10호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>6978-1111</p></a></td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710111" title="(유)백운횟집 상세보기" class="go_read"><img src="images/upload/fcty/A710111/thumb_400/20210608111953626.JPG" title="(유)백운횟집 썸네일 이미지 입니다." alt="(유)백운횟집 썸네일 이미지 입니다." width="400px" height="200px"><h4>(유)백운횟집</h4><p class="address_01"><span>위치</span>가락몰5관&nbsp;지상 1층 11호</p><p class="address_02" style="text-align:left;padding-left:36px"><span>전화번호</span>6978-1111</p></a></td></tr></tbody>
+                      </table>
+                      </div>
+                      <!-- Pagination -->
+                      <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                        <span class="page-control">
+                            <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                            <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                        </span>
+                        <span class="page-number">
+                            <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                            <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                            <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                        </span>
+                        <span class="page-control">
+                            <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                            <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                        </span>
+                        </div>
+                        <!--/Pagination-->
+                  </div>        
+            
+                  <!--썸네일형 리스트-->
+                    <div class="border_wrap" style="display:none">
+                      <div id="thumb_type_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_info" id="thumb_type_info" role="status" aria-live="polite"><p><span class="disable_guide_use"> 가락몰 5관 1F</span> <span>15</span>개  매장이 <span class="disable_guide_type">썸네일형 리스트로</span> 검색되었습니다.</p> </div>
+                      <span class="scroll_txt mb-sm-3">좌우로 스크롤해서 확인 가능합니다.</span>
+                      <div class="scroll_box">
+                          <table class="border_table dataTable no-footer" id="thumb_type" aria-describedby="thumb_type_info" role="grid" >
+                            <caption>층별 안내 썸네일형 게시판목록(호수,매장명,위치,취급부류,시설분류,대표자,연락처로 구성)</caption>
+                        <colgroup>
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:200px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                            <col style="width:100px">
+                        </colgroup>
+                        <thead>
+                        <tr role="row"><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">호수</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">매장명</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">위치</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">취급부류</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">시설분류</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">대표자</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">연락처</th></tr>
+                        </thead>
+                        <tbody><tr role="row" class="odd"><td>1</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710011" title="선우회센터 상세보기"><img src="images/upload/fcty/A710011/thumb_100/20170119012214935.JPG" title="가락몰5관 1층 선우회센터입니다." alt="가락몰5관 1층 선우회센터입니다."><span class="thumb_list_title">선우회센터</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;1호</td><td>편의시설</td><td>식당</td><td>윤현순</td><td>02-6978-1200</td></tr><tr role="row" class="even"><td>2</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710021" title="수동상회 상세보기"><img src="images/upload/fcty/A710021/thumb_100/20170104014034425.jpg" title="가락몰5관 1층 수동상회입니다." alt="가락몰5관 1층 수동상회입니다."><span class="thumb_list_title">수동상회</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;2호</td><td>편의시설</td><td>회센터</td><td>신명오</td><td>02-403-1767</td></tr><tr role="row" class="odd"><td>3</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710041" title="해남수산 상세보기"><img src="images/upload/fcty/A710041/thumb_100/20201120021229235.jpg" title="해남수산 썸네일 이미지 입니다." alt="해남수산 썸네일 이미지 입니다."><span class="thumb_list_title">해남수산</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;3호</td><td>편의시설</td><td>회센터</td><td>구금순</td><td>407-4195</td></tr><tr role="row" class="even"><td>5</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710051" title="고흥상회 상세보기"><img src="images/upload/fcty/A710051/thumb_100/20201120021441842.jpg" title="고흥상회 썸네일 이미지 입니다." alt="고흥상회 썸네일 이미지 입니다."><span class="thumb_list_title">고흥상회</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;5호</td><td>편의시설</td><td>회센터</td><td>정주엽</td><td>02-407-7463</td></tr><tr role="row" class="odd"><td>7</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710071" title="(유)성광수산 상세보기"><img src="images/upload/fcty/A710071/thumb_100/20201120021547005.jpg" title="(유)성광수산 썸네일 이미지 입니다." alt="(유)성광수산 썸네일 이미지 입니다."><span class="thumb_list_title">(유)성광수산</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;7호</td><td>편의시설</td><td>회센터</td><td>김연지</td><td>407-7463</td></tr><tr role="row" class="even"><td>8</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710081" title="채원수산 상세보기"><img src="images/upload/fcty/A710081/thumb_100/20210608111805216.JPG" title="채원수산 썸네일 이미지 입니다." alt="채원수산 썸네일 이미지 입니다."><span class="thumb_list_title">채원수산</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;8호</td><td>편의시설</td><td>회센터</td><td>이재람</td><td>6978-1200</td></tr><tr role="row" class="odd"><td>9</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710091" title="(유)대양수산 상세보기"><img src="images/upload/fcty/A710091/thumb_100/20210608111925119.JPG" title="(유)대양수산 썸네일 이미지 입니다." alt="(유)대양수산 썸네일 이미지 입니다."><span class="thumb_list_title">(유)대양수산</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;9호</td><td>편의시설</td><td>회센터</td><td>조효정</td><td>407-7463</td></tr><tr role="row" class="even"><td>10</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710101" title="(유)백운횟집 상세보기"><img src="images/upload/fcty/A710101/thumb_100/20170104021801161.jpg" title="가락몰 5관 1층 백운수산 입니다." alt="가락몰 5관 1층 백운수산 입니다."><span class="thumb_list_title">(유)백운횟집</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;10호</td><td>편의시설</td><td>회센터</td><td>김영임</td><td>6978-1111</td></tr><tr role="row" class="odd"><td>11</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710111" title="(유)백운횟집 상세보기"><img src="images/upload/fcty/A710111/thumb_100/20210608111953626.JPG" title="(유)백운횟집 썸네일 이미지 입니다." alt="(유)백운횟집 썸네일 이미지 입니다."><span class="thumb_list_title">(유)백운횟집</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;11호</td><td>편의시설</td><td>회센터</td><td>김영임</td><td>6978-1111</td></tr><tr role="row" class="even"><td>13</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710131" title="포항수산 상세보기"><img src="images/upload/fcty/A710131/thumb_100/20170104022502428.jpg" title="가락몰 5관 1층 포항수산 입니다." alt="가락몰 5관 1층 포항수산 입니다."><span class="thumb_list_title">포항수산</span></a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;13호</td><td>편의시설</td><td>회센터</td><td>최창식</td><td>408-8817</td></tr></tbody>
+                      </table>
+                        </div>
+                  
+                        </div>
+                         <!-- Pagination -->
+                      <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                        <span class="page-control">
+                            <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                            <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                        </span>
+                        <span class="page-number">
+                            <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                            <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                            <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                        </span>
+                        <span class="page-control">
+                            <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                            <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                        </span>
+                        </div>
+                        <!--/Pagination-->
+                  </div>
+                <!--리스트형 리스트-->
+                  <div class="border_wrap" style="display:none">
+                      <div id="list_type_wrapper" class="dataTables_wrapper no-footer">
+                        <div class="dataTables_info" id="list_type_info" role="status" aria-live="polite">
+                          <p><span class="disable_guide_use"> 가락몰 5관 1F</span> <span>15</span>개  매장이 
+                            <span class="disable_guide_type">리스트형 리스트로</span> 검색되었습니다.</p> </div>
+                            <span class="scroll_txt mb-sm-3">좌우로 스크롤해서 확인 가능합니다.</span>
+                            <div class="scroll_box">
+                              <table class="border_table dataTable no-footer" id="list_type" aria-describedby="list_type_info" role="grid">
+                                <caption>층별 안내 리스트형 게시판목록(호수,매장명,위치,취급부류,시설분류,대표자,연락처로 구성)</caption>
+                            <colgroup>
+                                <col style="width:100px">
+                                <col style="width:130px">
+                                <col style="width:150px">
+                                <col style="width:110px">
+                                <col style="width:110px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                            </colgroup>
+                        <thead>
+                            <tr role="row"><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">호수</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">매장명</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">위치</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">취급부류</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">시설분류</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">대표자</th><th scope="col" class="sorting_disabled" rowspan="1" colspan="1">연락처</th></tr>
+                        </thead>
+                        <tbody><tr role="row" class="odd"><td>1</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710011" title="선우회센터 상세보기" b="" class="go_read">선우회센터</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>식당</td><td>윤현순</td><td>02-6978-1200</td></tr><tr role="row" class="even"><td>2</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710021" title="수동상회 상세보기" b="" class="go_read">수동상회</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>신명오</td><td>02-403-1767</td></tr><tr role="row" class="odd"><td>3</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710041" title="해남수산 상세보기" b="" class="go_read">해남수산</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>구금순</td><td>407-4195</td></tr><tr role="row" class="even"><td>5</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710051" title="고흥상회 상세보기" b="" class="go_read">고흥상회</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>정주엽</td><td>02-407-7463</td></tr><tr role="row" class="odd"><td>7</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710071" title="(유)성광수산 상세보기" b="" class="go_read">(유)성광수산</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>김연지</td><td>407-7463</td></tr><tr role="row" class="even"><td>8</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710081" title="채원수산 상세보기" b="" class="go_read">채원수산</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>이재람</td><td>6978-1200</td></tr><tr role="row" class="odd"><td>9</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710091" title="(유)대양수산 상세보기" b="" class="go_read">(유)대양수산</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>조효정</td><td>407-7463</td></tr><tr role="row" class="even"><td>10</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710101" title="(유)백운횟집 상세보기" b="" class="go_read">(유)백운횟집</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>김영임</td><td>6978-1111</td></tr><tr role="row" class="odd"><td>11</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710111" title="(유)백운횟집 상세보기" b="" class="go_read">(유)백운횟집</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>김영임</td><td>6978-1111</td></tr><tr role="row" class="even"><td>13</td><td><a href="/fcty/U010/read/floor.do?fcty_id=A710131" title="포항수산 상세보기" b="" class="go_read">포항수산</a></td><td>가락몰5관&nbsp;지상&nbsp;1층 &nbsp;</td><td>편의시설</td><td>회센터</td><td>최창식</td><td>408-8817</td></tr></tbody>
+                              </table>
+                            </div> 
+                    
+                        </div>
+                         <!-- Pagination -->
+                      <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                        <span class="page-control">
+                            <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                            <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                        </span>
+                        <span class="page-number">
+                            <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                            <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                            <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                        </span>
+                        <span class="page-control">
+                            <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                            <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                        </span>
+                        </div>
+                        <!--/Pagination-->
+                  </div>
+                  
+          
+                  <!-- start : paging -->
+                  <div class="paging"></div>
+                  <!-- end : paging -->
+                              </div>
+						<!-- /컨텐츠 내용 -->
+                         </div>
+                         </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
+<script>
+  //Gtp스크립트라 디자인에서 디테일 수정불가
+  $(document).ready(function() {
+    // 함수: 클래스 이름에서 숫자를 추출해 매칭되는 인덱스를 찾기 위한 함수
+    function getClassIndex(element) {
+        const match = $(element).attr('class').match(/mall_btn_(\d+)/);
+        return match ? parseInt(match[1], 10) : null;
+    }
+
+    // 함수: PC와 반응형에 따라 해당하는 래퍼 선택
+    function getActiveWrapper() {
+        return $(window).width() < 1025 ? '.floor_mall_wrap' : '.main_mall_wrap';
+    }
+
+    // 함수: 모바일 환경인지 확인
+    function isMobile() {
+        return /Mobi|Android/i.test(navigator.userAgent) || $(window).width() < 1025;
+    }
+
+    // 이벤트 등록 함수
+    function bindEvents(wrapper) {
+        const buttons = $(wrapper + ' .mall_btn');
+        const hoverElements = $(wrapper + ' .mall_hover_color_img > div, ' + wrapper + ' .mall_bg_img img');
+        const tabs = $('.tabs .tab');
+
+        // PC 환경에서만 hover 이벤트 등록
+        if (!isMobile()) {
+            buttons.off('mouseenter mouseleave'); // 기존 hover 이벤트 제거
+            buttons.hover(
+                function() {
+                    const classIndex = getClassIndex(this);
+                    if (classIndex) {
+                        hoverElements.removeClass('on');
+                        $(wrapper + ' .mall_hover_color_0' + classIndex + ', ' + wrapper + ' .mall_bg_img0' + classIndex).addClass('on');
+                    }
+                },
+                function() {
+                    hoverElements.removeClass('on');
+                }
+            );
+        }
+
+        // 버튼 클릭 시 탭과 이미지 업데이트
+        buttons.off('click'); // 기존 클릭 이벤트 제거
+        buttons.on('click', function() {
+            const classIndex = getClassIndex(this);
+            if (classIndex) {
+                // 모든 버튼 및 이미지에서 기존 클래스 제거
+                $(wrapper + ' .mall_hover_img > div, ' + wrapper + ' .mall_bg_img img').removeClass('on');
+                buttons.removeClass('on');
+                $('.tabs .tab > a').removeClass('active');
+
+                // 매칭되는 요소에 클래스 추가
+                $(wrapper + ' .mall_hover_0' + classIndex + ', ' + wrapper + ' .mall_bg_img0' + classIndex).addClass('on');
+                $(this).addClass('on');
+                $('.tabs .mall_btn_' + ('0' + classIndex)).find('a').addClass('active');
+            }
+        });
+
+        // 탭 클릭 시 매칭되는 mall_btn 및 이미지 업데이트
+        tabs.off('click'); // 기존 클릭 이벤트 제거
+        tabs.on('click', function() {
+            const classIndex = getClassIndex(this);
+            if (classIndex) {
+                // 모든 탭 및 관련 요소의 기존 클래스 제거
+                $('.tabs .tab > a').removeClass('active');
+                $(wrapper + ' .mall_btn').removeClass('on');
+
+                // 모바일과 PC 환경에 따라 처리 분리
+                if (isMobile()) {
+                    $(wrapper + ' .mall_bg_img img').removeClass('on');
+                    $(wrapper + ' .mall_bg_img0' + classIndex).addClass('on'); // 모바일에서는 mall_bg_img에 on 클래스 추가
+                } else {
+                    $(wrapper + ' .mall_hover_img > div').removeClass('on');
+                    $(wrapper + ' .mall_hover_0' + classIndex).addClass('on'); // PC에서는 mall_hover_img에 on 클래스 추가
+                }
+
+                // 매칭되는 탭의 a 태그에 'active' 클래스 추가
+                $(this).find('a').addClass('active');
+
+                // 매칭되는 mall_btn에 'on' 클래스 추가
+                $(wrapper + ' .mall_btn_' + ('0' + classIndex)).addClass('on');
+            }
+        });
+    }
+
+    // 초기 이벤트 바인딩
+    bindEvents(getActiveWrapper());
+
+    // 반응형 변화 감지
+    $(window).on('resize', function() {
+        bindEvents(getActiveWrapper());
+    });
+});
+
+</script>

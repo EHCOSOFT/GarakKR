@@ -1,0 +1,209 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap open_data sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>공공데이터 신청</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="정보공개로 이동">정보공개</a></li>
+								<li><a href="#" class="txt" aria-label="공공데이터 이동">공공데이터</a></li>
+                                <li><a href="#" class="txt" aria-label="공공데이터 개방 이동">공공데이터 개방</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="sub_each mb-4">
+                                <h5 class="sub_con_tit1 mb-3">기본 인적사항</h5>
+                                <span class="form_st blue-text"><span class="red-text caption">*</span> 표시는 필수 입력 항목이며 이외의 항목은 선택 입력 항목입니다.</span>
+                                 <!-- formA -->
+                                 <table class="formA mt-3">
+                                   <caption>기관명, 대표자(전화번호, 이메일주소), 담당자(전화번호, 휴대폰번호, 이메일주소), 주소 등의 내용을 포함한 표</caption>
+                                   <colgroup>
+                                     <col style="width:10%;">
+                                     <col style="width:15%;">
+                                   </colgroup>
+                                   <tbody>
+                                     <tr>
+                                       <th scope="row" colspan="2"><label for="organ_nm">기관명</label> <span class="fc_red">*</span></th>
+                                       <td><input type="text" id="organ_nm" name="organ_nm" maxlength="100" class="w250"></td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row" rowspan="2">대표자</th>
+                                       <th scope="row"><label for="rprsntv_telno">전화번호</label> <span class="fc_red">*</span></th>
+                                       <td><input type="text" id="rprsntv_telno" name="rprsntv_telno" class="w250" onkeyup="phoneFomatter(this);"></td>
+                                     </tr>
+                                     <tr>
+                                      <th scope="row"><label for="email_1">이메일</label><span class="fc_red">*</span></th>
+                                      <td>
+                                        <div class="email_ip flex left">
+                                          <input type="text" id="email_1" name="email_1" onkeyup="cfLengthCheck('이메일',this, 190);">
+                                          <span class="input_txt ml-2 mr-2">@</span>
+                                          <input type="text" id="email_2" name="email_2" class="email_input" title="이메일 주소 입력">
+                                          <select name="email_address" class="email_address" title="이메일 주소 선택">
+                                            <option value="">직접입력</option><option value="gmail.com">gmail.com</option><option value="naver.com">naver.com</option><option value="hanmail.net">hanmail.net</option>
+                                          </select>
+                                          <input type="hidden" id="rprsntv_email" name="rprsntv_email">
+                                           </div>
+                                      </td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row" rowspan="3">담당자</th>
+                                       <th scope="row"><label for="charger_telno">전화번호</label> <span class="fc_red">*</span></th>
+                                       <td><input type="text" id="charger_telno" name="charger_telno" class="w250" onkeyup="phoneFomatter(this);"></td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row"><label for="charger_mobile">휴대폰번호</label> <span class="fc_red">*</span></th>
+                                       <td><input type="text" id="charger_mobile" name="charger_mobile" value="01054633844" class="w250" onkeyup="phoneFomatter(this);"></td>
+                                     </tr>
+                                     <tr>
+                                      <th scope="row"><label for="email_3">이메일</label><span class="fc_red">*</span></th>
+                                      <td>
+                                          <div class="email_ip flex left">
+                                          <input type="text" id="email_3" name="email_3" onkeyup="cfLengthCheck('이메일',this, 190);">
+                                          <span class="input_txt ml-lg-2 mr-lg-2">@</span>
+                                          <input type="text" id="email_4" name="email_4" class="email_input" title="이메일 주소 입력">
+                                          <select name="email_address2" class="email_address" title="이메일 주소 선택">
+                                            <option value="">직접입력</option><option value="gmail.com">gmail.com</option><option value="naver.com">naver.com</option><option value="hanmail.net">hanmail.net</option>
+                                          </select>
+                                          <input type="hidden" id="charger_email" name="charger_email">
+                                           </div>
+                                      </td>
+                                     </tr>	
+                                     <tr>
+                                        <th scope="row" colspan="2"><label for="publicdata_zip">주소</label><span class="fc_red">*</span></th>
+                                        <td class="inp_ads">
+                                          <input type="text" name="zip" id="publicdata_zip" class="ads1" readonly="">
+                                          <a type="button" class="ads_btn btn_popup popup_ads btn" onClick="window.open('11_02_address_popup.html','address_popup','width=800,height=700')">우편번호 찾기</a>
+                                          <input type="text" class="full_input full" name="adres" id="publicdata_adres" readonly="" title="상세주소1 입력">
+                                          <input type="text" class="full_input full" name="detail_adres" id="publicdata_adres_detail" maxlength="50" title="상세주소2 입력">
+                                        </td>
+                                      </tr>	                       
+                                   </tbody>
+                                 </table>
+                                 <!-- // formA -->
+                              </div>
+                              <div class="sub_each mb-4">
+                                <h5 class="sub_con_tit1_1 mb-3">신청 입력사항</h5>
+                                <span class="form_st blue-text"><span class="red-text caption">*</span> 표시는 필수 입력 항목이며 이외의 항목은 선택 입력 항목입니다.</span>
+                  
+                                 <table class="formA mt-3">
+                                   <caption>데이터 분야, 개발 프로그램 명칭, 이용기간, 비밀번호, 비밀번호 확인, 사용 목적(서술식) 등의 내용을 포함한 표</caption>
+                                   <colgroup>
+                                     <col style="width:20%;">
+                                     <col>
+                                   </colgroup>
+                                   <tbody>
+                                     <tr>
+                                      <th scope="row"><label for="open_data_select">데이터 분야</label><span class="fc_red">*</span></th>
+                                      <td>
+                                        <select id="open_data_select" name="public_data_realm_code" class="w250">
+                                            <option value="">공공데이터 분야 선택</option><option value="30">(신)유통정보 - 주요 품목 가격</option><option value="31">(신)유통정보 - 품목별 최근 5개년 가격</option><option value="42">(신)유통정보 - 품목별등급별가격(도매시장법인거래)</option><option value="29">(신)유통정보 - 고중저가격</option><option value="32">(신)유통정보 - 경매품목 산지별 가격</option><option value="33">(신)유통정보 - 경매품목 물량분포</option><option value="34">(신)유통정보 - 부류별가격정보(수입품목)</option><option value="35">(신)유통정보 - 월간등락품목(상승한품목)</option><option value="36">(신)유통정보 - 월간등락품목(월평균가격)</option><option value="37">(신)유통정보 - 월별등락품목(하락한품목)</option><option value="38">(신)유통정보 - 일일등락품목(등락품목수)</option><option value="39">(신)유통정보 - 일일등락품목(상승한품목)</option><option value="40">(신)유통정보 - 일일등락품목(하락한품목)</option><option value="41">(신)유통정보 - 주간등락품목(기간평균가격)</option><option value="43">(신)유통정보 - 주간등락품목(상승한품목)</option><option value="44">(신)유통정보 - 주요품목가격(수입품목전용)</option><option value="45">(신)유통정보 - 주간등락품목(주별가격흐름)</option><option value="46">(신)유통정보 - 주간등락품목(하락한품목)</option><option value="47">(신)유통정보 - ARS</option><option value="24">유통정보(중도매인거래) - 품목별등급별가격</option><option value="23">유통정보(시장도매인거래) - 품목별등급별가격</option><option value="5">유통정보 - 경매결과</option><option value="6">유통정보 - 가락시장 반입물량(경매전)</option><option value="7">유통정보 - 가락시장 반입물량(경매후)</option><option value="8">유통정보 - 가락시장 반입물량(정산후)</option><option value="21">유통정보 - 판매결과</option><option value="28">유통정보 - 산지별물량(무,배추,양파,감자)</option>
+                                          </select>
+                                      </td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row"><label for="devlop_progrm_nm">개발 프로그램 명칭</label><span class="fc_red">*</span></th>
+                                       <td><input type="text" id="devlop_progrm_nm" name="devlop_progrm_nm" class="full_input" maxlength="100"></td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row"><label for="use_begin_de">이용기간</label><span class="fc_red">*</span></th>
+                                       <td>
+                                               <div class="inp_cal flex left">
+                                                <!-- <input type="text" id="use_begin_de" name="use_begin_de" class="sch_calendar" value="" placeholder="이용 시작일" /> -->
+                                                <input type="text" id="use_begin_de" name="use_begin_de" class="sch_calendar hasDatepicker" value="" placeholder="이용 시작일" onkeyup="calFomatter(this);">
+                                                <span class="ip_txt">~</span>
+                                                <!-- <input type="text" id="use_end_de" name="use_end_de" class="sch_calendar" value="" placeholder="이용 종료일" title="이용 종료일" /> -->
+                                                <input type="text" id="use_end_de" name="use_end_de" class="sch_calendar hasDatepicker" value="" placeholder="이용 종료일" title="이용 종료일" onkeyup="calFomatter(this);">
+                                              </div>
+                                                           </td>
+                                     </tr>
+                                     
+                                     <tr>
+                                       <th scope="row"><label for="pw">비밀번호</label> <span class="fc_red">*</span></th>
+                                       <td>
+                                         <input type="password" id="pw" name="api_password" class="w250" style="IME-MODE: disabled" maxlength="12" data-tk-kbdtype="qwerty" onfocus="tk.onKeyboard(this);">
+                                         <p class="write_sup_txt body-1 blue-text">※ 비밀번호는 9~12자 숫자+영문자+특수문자(!*) 조합만 등록됩니다.</p>
+                                       </td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row"><label for="pw_chk">비밀번호 확인</label> <span class="fc_red">*</span></th>
+                                       <td>
+                                         <input type="password" id="pw_chk" name="api_password_chk" class="w250" style="IME-MODE: disabled" maxlength="12" data-tk-kbdtype="qwerty" onfocus="tk.onKeyboard(this);">
+                                       </td>
+                                     </tr>
+                                     
+                                     <tr>
+                                       <th scope="row"><label for="use_purps">사용목적<br>(서술식)</label><span class="fc_red">*</span></th>
+                                       <td>
+                                         <textarea name="use_purps" id="use_purps" cols="30" rows="5" onkeyup="cfLengthCheck('사용목적은',this, 4000);"></textarea>
+                                       </td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row"><label for="desired">바라는 점<br>(서술식)</label></th>
+                                       <td>
+                                         <textarea name="desired" id="desired" cols="30" rows="5" onkeyup="cfLengthCheck('바라는 점은',this, 4000);"></textarea>
+                                       </td>
+                                     </tr>
+                                   </tbody>
+                                </table><!-- // formA -->
+                              </div>
+                              <div class="sub_each mb-3">
+                                <div class="bold_bd_box priv p-4 center" style="border: 1px solid #efefef;">
+                                  <p class="grey-text body-1 mb-3">본인은 상기와 같이 서울특별시 농수산식품공사가 보유 운영중인 공공데이터를 이용함에 있어 공익을 저해하거나 특정 단체 또는 개인의 이익을 침해할 경우 본인의 의사와 관계없이 서울특별시 농수산식품공사가 데이터 이용권한을 박탈함에 있어 이의가 없음을 동의합니다.</p>
+                                  <p class="today">2024년 10월 19일</p>
+                                </div>
+                                <div class="agree_radio_txt row center p-4" style="background: #f4f7fd;">
+                                    <p class="body-1 center mb-3">위와 같이 농수산식품공사 데이터 이용권한 관련 내용에 동의하십니까? </p>
+                                    <div class="agree_radio_box center">
+                                        <p>
+                                            <label>
+                                              <input class="with-gap" name="publicdata_agree" id="agree_y" type="radio" checked />
+                                              <span>예</span>
+                                            </label>
+                                            <label>
+                                                <input class="with-gap" name="publicdata_agree" id="agree_n" type="radio" />
+                                                <span>아니오</span>
+                                              </label>
+                                          </p>
+                                                
+                                      <!-- <span class="radio_each">
+                                        <input type="radio" name="publicdata_agree" id="agree_y" class="hide" value="Y">
+                                        <label for="agree_y"><span class="vradio"><span class="cir"></span></span>예</label>
+                                      </span>
+                                      <span class="radio_each">
+                                        <input type="radio" name="publicdata_agree" id="agree_n" class="hide" value="N">
+                                        <label for="agree_n"><span class="vradio"><span class="cir"></span></span>아니오</label>
+                                      </span> -->
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="common_btn_box">
+                                <a href="#" class="common_btn btn-large" onclick="fnInsert(); return false;">신청하기</a>
+                                <a href="#" class="common_btn btn-large grey cancel" onclick="fnList(); return false;">취소</a>
+                              </div>
+						<!-- /컨텐츠 내용 -->
+                         </div>
+                         </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

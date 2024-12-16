@@ -1,0 +1,112 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap ecofriendly sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5 mb-0">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>친환경유통센터견학</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="고객센터">고객센터</a></li>
+								<li><a href="#" class="txt" aria-label="고객지원 이동">고객지원</a></li>
+                                <li><a href="#" class="txt" aria-label="친환경유통센터견학 이동">친환경유통센터견학</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="row mb-4 sec_01">
+                                <div class="sub_each p-4" style="border: 1px solid #efefef;">
+                                    <h5 class="sub_con_tit2 mb-4">친환경유통센터견학 신청을 위한 개인정보 수집 및 이용 동의서</h5>
+                    
+                                    <!-- bold_bd_box -->
+                                    <div class="bold_bd_box priv">
+                                      <!-- tableB -->
+                                      <table class="tableB ta_c mb-4">
+                                        <caption>개인정보 수집 항목, 수집근거, 수집목적, 보유기간 이 나타나 있는 표</caption>
+                                        <colgroup>
+                                          <col style="width:33%;">
+                                          <col style="width:33%;">
+                                          <col style="width:20%;">
+                                        </colgroup>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">항목</th>
+                                            <th scope="col">수집근거</th>
+                                            <th scope="col">수집목적</th>
+                                            <th scope="col">보유기간</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="ta_l">
+                                              <ul class="bull_list">
+                                                <li>필수항목 : 성명, 주소</li>
+                                                <li>선택항목 : 휴대폰번호, 전화번호, 이메일
+                                                  <p class="bull_txt ref">선택항목 제공 시 보다 빠른 민원 처리결과를 받으실 수 있습니다.</p>
+                                                </li>
+                                              </ul>
+                                            </td>
+                                            <td>
+                                                  민원처리에관한법률 및 동법 시행령,<br>부패방지 및 국민권익 위원회 설치와<br>운영에 관한 법률, 전자정부법및동법시행령
+                                            </td>
+                                            <td>민원 접수·처리</td>
+                                            <td><span class="blue-text body-1" style="text-decoration: underline;">준영구</span></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- // tableB -->
+                    
+                                      <p class="body-1 mb-2">※서울시농수산식품공사 시스템은 시민 불편, 불만족 사항을 즉시 처리하기 위하여 아래와 같이 민원 처리에 필요한 개인정보를 수집, 이용합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주시기 바랍니다.</p>
+                                      <p class="body-1 mb-2">※수집된 개인정보는 수집목적외 용도로 사용되거나 제3자에게 제공되지 않으며, 보유기간 경과 즉시 파기 됩니다.</p>
+                                      <p class="body-1">※위의 개인정보 수집, 이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 서비스 제공에 일부 제한을 받을 수 있습니다.</p>
+                                    </div>
+                                    <!-- // bold_bd_box -->
+                    
+                                    
+                            </div>
+                            <div class="agree_radio_box flex mo-flex p-3" style="background-color: #f4f7fd;">
+                                <p class="body-1 mr-lg-2"> 위와 같이 개인정보를 수집, 이용하는데 동의하십니까?</p>
+                                 <p class="mr-3">
+                                     <label>
+                                       <input class="with-gap" name="agree" type="radio" checked />
+                                       <span>예</span>
+                                     </label>
+                                   </p>
+                                         
+                                   <p>
+                                     <label>
+                                       <input class="with-gap" name="agree" type="radio" />
+                                       <span>아니오</span>
+                                     </label>
+                                   </p>
+                                         
+                                 </div>
+                            <div class="common_btn_box">
+                                <a href="11_11_ecofriendly_tour_detail2.html" class="btn-large" onclick="fnAuthLnbnsInsert(); return false;">확인</a>
+                                <a href="#" class="btn-large grey" onclick="fnSelectInfo(); return false;">취소</a>
+                              </div>
+                            </div>
+                        <!-- /컨텐츠 내용 -->
+                        </div>
+                   </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

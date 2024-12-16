@@ -1,0 +1,58 @@
+@@include('./include/header.html')
+
+<div class="pop_box">
+    <div class="pop_top">
+        <h2 class="tit1">우편번호 찾기</h2>
+        <button type="button" class="pop_x layer_pop_close" onclick="fnJusoLayerPopClose(); return false;">닫기</button>
+    </div>
+    <div class="pop_con" style="overflow-y: auto;">
+        <div class="pop_var_h_1">
+            <p class="mb_10">
+                찾고자 하는 주소의 도로명을 입력하세요. (예: 양재대로/둔지길)<br> <span class="blue-text body-2">* 2014년 1월 1일 부로 신주소체계 적용</span>
+            </p>
+            <form name="jusoform" id="jusoform" action="#" method="post">
+                <input type="hidden" name="currentPage" id="currentPage">
+                <input type="hidden" name="prefixTxt" id="prefixTxt" value="minwon_">
+                <div class="sch_box">
+                    <ul class="sch_ads flex col l12 s12 mt-2">
+                        <li class="l4 s4 mr-2"><input type="text" class="enter_search" name="sch_road_nm" title="도로명 입력" placeholder="도로명"></li>
+                        <li class="l4 s4 mr-2"><input type="text" class="enter_search" name="sch_build_no_bonbeon" title="건물번호 입력" placeholder="건물번호"></li>
+                        <li class="l4 s4"><input type="text" class="enter_search" name="sch_sigungu_build_nm" title="빌딩명 입력" placeholder="빌딩명"></li>
+                    </ul>
+                    <ul class="row">
+                        <li><input type="text" class="enter_search" name="sch_zipno" title="우편번호 입력" placeholder="우편번호"></li>
+                    </ul>
+                    <div class="btn_box row right">
+                        <button type="button" class="btn btn_sch" onclick="fnJusoSearch(); return false;">검색</button>
+                        <button type="button" class="btn btn_ccl grey" onclick="fnJusoReset(); return false;">초기화</button>
+                    </div>
+                </div>
+                <!-- //sch_box -->
+                <table class="tableC">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 20%;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">우편 번호</th>
+                            <th scope="col">상세 주소</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adres_list">
+                        <tr><td colspan="3">조회된 결과가 없습니다.</td></tr>
+                        <tr>	<td>253</td>	<td>18429</td>	<td class="tit"><a href="#" onclick="fnAdresSelect('18429', '경기도 화성시 동탄공원로 21-11 (능동, 푸른마을모아미래도아파트)'); return false;">경기도 화성시 동탄공원로 21-11 (능동, 푸른마을모아미래도아파트)</a></td></tr>
+                    </tbody>
+                </table>
+                <div class="paging" id="juso_page_navi"></div>
+                <div class="paging_m" id="mobile_page_navi"></div>
+                <!-- //paging -->
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

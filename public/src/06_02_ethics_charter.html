@@ -1,0 +1,79 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap customer_service sub pb-0">
+	<div class="contentsWrap">
+			<div class="row section pb-lg-6">
+				<div class="row section lighten-5 pt-lg-5">
+					<div class="container col l12 s12 flex-top">
+						<div class="col l2 s12 mr-lg-3">
+							@@include('./include/snb.html')
+
+						</div>
+						<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+							<div class="title-wrap title-content-wrap mb-4 pb-4">
+								<h4>윤리헌장</h4>
+							</div>
+							<!-- breadcrumb -->
+							<nav aria-label="경로" class="breadcrumb-wrap mb-4">
+								<ol class="breadcrumb" aria-label="Breadcrumb">
+								  <li><a href="#" class="home" aria-label="홈" role="link"></a></li>
+								  <li><a href="#" class="txt" role="link">공사소개</a></li>
+								  <li><a href="#" class="txt" role="link">윤리경영</a></li>
+								  <li><a href="#" class="txt" role="link">윤리헌장</a></li>
+								</ol>
+							  </nav>
+							  <!-- breadcrumb -->
+						<!--컨텐츠 내용-->
+						<section class="col l12 s12 contents-inner">
+							<div class="row">
+							  <div class="col s12 l12">
+								<div class="sub_each">
+								  <div class="service_list_box center p-lg-5 p-sm-3" role="region" aria-labelledby="ethics-title">
+									<p class="body-2" style="position: absolute; left: 1rem; top: 1rem;">개정 2021.10.13., 2022. 11. 30., 2023.12.29.</p>
+									<h4 class="service_list_tit mb-3" id="ethics-title">윤리헌장</h4>
+									<p class="service_list_txt mb-lg-5 mb-sm-3 black-text">우리 서울특별시농수산식품공사(이하 “공사”라 한다”)는 농수산물 도매시장의 효율적 관리 운영을 통한
+									  건전한 농수산물 유통을 도모함으로써, 생산자.유통인.소비자의 건강하고 행복한 생활안정에 기여해 온
+									  자랑스러운 국민의 공기업이다. 이에 우리는 이러한 금지와 자부심을 가지고 온리경영과 준법경영을 통해 국민의 사랑과 신뢰를 받는
+									  세계적인 공기업이 되고자 한다.
+									</p>
+		  
+									<ol class="service_list mb-4">
+									  <li><span class="num-tag">하나.</span>우리는 창의적 사고와 도전적 정신으로 우리의 사명을 성하고 높은 윤리적 가치관을 바탕으로 정직하고 공정한 자세로 업무를 처리하며 부패방지와 깨끗한 공직풍토 조성을 위해 노력한다.</li>
+									  <li><span class="num-tag">하나.</span>우리는 고객에게 최고의 서비스를 제공하며 지속적인 고객만족과 고객가치 창조의 경영을 통하여 고객 제일주의를 실천한다.</li>
+									  <li><span class="num-tag">하나.</span>우리는 국내법과 행동강령을 준수하고 자유경쟁의 시장질서를 존중하며, 모든 이해관계자와 상호 협력하는 공동체적인 관계를 구축하여 공동의 번영을 추구한다.</li>
+									  <li><span class="num-tag">하나.</span>우리는 임직원 개개인의 인격을 존중하고 차별대우를 하지 않으며, 공평한 기회와 공정한 평가를 받도록 하는 한편 임직원의 건강과 삶의 질 향상을 위해 노력한다.</li>
+									  <li><span class="num-tag">하나.</span>우리는 사회의 구성원으로서 공익활동에 적극적으로 참여하고, 끊임없이 새로운 가치를 창조하여 국가와 사회의 발전에 공헌한다.</li>
+									  <li><span class="num-tag">하나.</span>우리는 생명을 존중하고 자연과 환경보호 활동에 앞장서서 깨끗한 자연환경을 후세에 전하도록 최선을 다한다.</li>
+									  <li><span class="num-tag">하나.</span>우리는 노사간의 상호 신뢰와 협조를 통하여 노사 공동의 이익을 증진함으로써 산업평화 도모 및 국민경제 발전에 기여한다.</li>
+									</ol>
+		  
+									<h6 class="service_list_last_tit">서울특별시농수산식품공사</h6>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </section>
+						  <!--/컨텐츠 내용-->
+						</div>
+						@@include('./include/quick-link.html')
+					</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
+<script>
+	$(".board-ico").click(function() {
+		 $(this).parent().siblings(".files-info").show();
+		 return false;
+ });
+ $(".close_files").click(function() {
+		 $(this).parent().hide();
+		 return false;
+ });
+ </script>

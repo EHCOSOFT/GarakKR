@@ -1,0 +1,493 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap event sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>행사참여</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="고객센터">고객센터</a></li>
+								<li><a href="#" class="txt" aria-label="고객참여 이동">고객참여</a></li>
+                                <li><a href="#" class="txt" aria-label="행사참여 이동">행사참여</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="row mb-2 sec_01">
+                                <div class="col l12 s12">
+                                    <div class="sub_tit_box">
+                                        <img src="images/icon_cust-hangsa_top.svg" alt="행사참여 아이콘" />
+                                        <div class="txt1">
+                                        <p class="body-1">
+                                            <b>서울시농수산식품공사에서 진행하는 각종 행사, 교육에 참여하실 수 있습니다.</b><br>
+                                            쿠킹클래스, 상인아카데미 등 각종 행사, 교육 참여를 신청할 수 있는 공간입니다.온라인으로 편리하게 교육 행사를 신청해 보세요.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                                <div class="row sec_03">
+                                    <!--날짜검색 필드-->
+                                    <div class="inp_cal field-default flex-top col l12 s12 mb-sm-4 p-3">
+                                        <div class="date-wrap col s12">
+                                        <div class="form-wrap">
+                                            <input type="text" id="sch_begin_dt" name="sch_begin_dt" title="시작 날짜" class="datepicker  hasDatepicker" value="" placeholder="시작일" onkeyup="calFomatter(this);">
+                                        </div>
+                                        <span class="ip_txt">~</span>
+                                        <div class="form-wrap">
+                                            <input type="text" id="sch_end_dt" name="sch_end_dt" title="끝 날짜" class="datepicker sch_calendar hasDatepicker" value="" placeholder="종료일" onkeyup="calFomatter(this);">
+                                        </div>
+                                        </div>
+                                        <div class="select-wrap col s12">
+
+                                        <div class="form-wrap ml-lg-3">
+                                            <div class="input-field flex">
+                                            <select aria-label="상세분류 선택">
+                                                <option value="" disabled selected>전체</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                            <li class="col s12 ml-2">
+                                                <input type="text" class="search col right s12" name="sch_text" title="검색어 입력" placeholder="검색어 입력" value="">
+                                                </li>
+                                            </div>
+
+                                        </div>
+                                        </div>
+                                        <div class="srch-wrap col s12 right">
+                                        <ul class="right col s12">
+
+                                            <li class="mr-2">
+                                                <a href="#" class="btn" aria-label="검색 버튼">검색</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-dark" aria-label="초기화 버튼">초기화</a>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    <!--/날짜검색 필드-->
+                                </div>
+                                <div class="row sec_04">
+                                    <!--건수-->
+                                        <div class="row">
+                                            <span class="col total mr-2">전체 <b>3820</b>건 </span>
+                                            <span class="current"> (<strong>1</strong>/<span>382</span>)</span>
+                                        </div>
+                                    <!--/건수-->
+                                    <!--테이블-->
+                                    <ul class="event_img_box">
+				
+                                        <li>
+                                            <span class="event_img"><img src="images/event/event_sample.jpg" alt="명장 김치클래스" onerror="fnImgError(this)"></span>
+                                          <h4 class="tit1">[서울식생활시민학교] 이하연 명인의 김치클래스</h4>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">대상연령</span> 
+                                                <em class="txt1">
+                                                
+                                                    제한없음
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사일정</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.10.07~2024.10.08
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사장소</span> 
+                                                <em class="txt1">
+                                                    가락몰 쿠킹스튜디오(업무동 4층)
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">접수현황</span> 
+                                                <em class="txt1">
+                                                
+                                                    
+                                                    24명 중 
+                                                
+                                                    
+                                                    <span class="fc_red">24</span>명 접수
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">접수기간</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.09.19~2024.09.26
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">참여비용</span> 
+                                                <em class="txt1">
+                                                
+                                                    40000 원
+                                                
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          
+                                          <a href="#" class="class_open" onclick="fnDetail('64',this); return false;">진행</a>
+                                          
+                                        </li>
+                                        
+                                        <li>
+                                          <span class="event_img"><img src="images/event/event_sample.jpg" alt="명장 김치클래스" onerror="fnImgError(this)"></span>
+                                          <h4 class="tit1">[서울식생활시민학교] 홈베이킹 클래스</h4>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">대상연령</span> 
+                                                <em class="txt1">
+                                                
+                                                    제한없음
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사일정</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.06.20~2024.06.20
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사장소</span> 
+                                                <em class="txt1">
+                                                    가락몰 쿠킹스튜디오(업무동 4층)
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">접수현황</span> 
+                                                <em class="txt1">
+                                                
+                                                    
+                                                    12명 중 
+                                                
+                                                    
+                                                    <span class="fc_red">12</span>명 접수
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">접수기간</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.06.05~2024.06.13
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">참여비용</span> 
+                                                <em class="txt1">
+                                                
+                                                    20000 원
+                                                
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          
+                                          <a href="#" class="class_close" onclick="fnDetail('63',this); return false;">마감</a>
+                                          
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="event_img"><img src="images/event/event_sample.jpg" alt="명장 김치클래스" onerror="fnImgError(this)"></span>
+                                          <h4 class="tit1">[서울식생활시민학교] 계절한식 클래스</h4>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">대상연령</span> 
+                                                <em class="txt1">
+                                                
+                                                    제한없음
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사일정</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.06.04~2024.06.04
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사장소</span> 
+                                                <em class="txt1">
+                                                    가락몰 쿠킹스튜디오(업무동 4층)
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">접수현황</span> 
+                                                <em class="txt1">
+                                                
+                                                    
+                                                    24명 중 
+                                                
+                                                    
+                                                    <span class="fc_red">22</span>명 접수
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">접수기간</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.05.23~2024.05.30
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">참여비용</span> 
+                                                <em class="txt1">
+                                                
+                                                    20000 원
+                                                
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          
+                                          <a href="#" class="class_close" onclick="fnDetail('62',this); return false;">마감</a>
+                                          
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="event_img"><img src="images/event/event_sample.jpg" alt="명장 김치클래스" onerror="fnImgError(this)"></span>
+                                          <h4 class="tit1">[서울식생활시민학교] 특별한 초대 요리</h4>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">대상연령</span> 
+                                                <em class="txt1">
+                                                
+                                                    제한없음
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사일정</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.05.16~2024.05.16
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사장소</span> 
+                                                <em class="txt1">
+                                                    가락몰 쿠킹스튜디오(업무동 4층)
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">접수현황</span> 
+                                                <em class="txt1">
+                                                
+                                                    
+                                                    24명 중 
+                                                
+                                                    
+                                                    <span class="fc_red">24</span>명 접수
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">접수기간</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.05.01~2024.05.09
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">참여비용</span> 
+                                                <em class="txt1">
+                                                
+                                                    20000 원
+                                                
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          
+                                          <a href="#" class="class_close" onclick="fnDetail('61',this); return false;">마감</a>
+                                          
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="event_img"><img src="images/event/event_sample.jpg" alt="명장 김치클래스" onerror="fnImgError(this)"></span>
+                                          <h4 class="tit1">[서울식생활시민학교] 홈브런치 클래스</h4>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">대상연령</span> 
+                                                <em class="txt1">
+                                                
+                                                    제한없음
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사일정</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.05.08~2024.05.08
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사장소</span> 
+                                                <em class="txt1">
+                                                    가락몰 쿠킹스튜디오(업무동 4층)
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">접수현황</span> 
+                                                <em class="txt1">
+                                                
+                                                    
+                                                    24명 중 
+                                                
+                                                    
+                                                    <span class="fc_red">24</span>명 접수
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">접수기간</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.04.23~2024.04.30
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">참여비용</span> 
+                                                <em class="txt1">
+                                                
+                                                    20000 원
+                                                
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          
+                                          <a href="#" class="class_close" onclick="fnDetail('60',this); return false;">마감</a>
+                                          
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="event_img"><img src="images/event/event_sample.jpg" alt="명장 김치클래스" onerror="fnImgError(this)"></span>
+                                          <h4 class="tit1">[서울식생활시민학교] 한식 디저트 클래스</h4>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">대상연령</span> 
+                                                <em class="txt1">
+                                                
+                                                    제한없음
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사일정</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.05.03~2024.05.03
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">행사장소</span> 
+                                                <em class="txt1">
+                                                    가락몰 쿠킹스튜디오(업무동 4층)
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          <ul class="event_list">
+                                            <li>
+                                                <span class="bull1">접수현황</span> 
+                                                <em class="txt1">
+                                                
+                                                    
+                                                    24명 중 
+                                                
+                                                    
+                                                    <span class="fc_red">19</span>명 접수
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">접수기간</span> 
+                                                <em class="txt1">
+                                                
+                                                    2024.04.18~2024.04.26
+                                                
+                                                </em>
+                                            </li>
+                                            <li>
+                                                <span class="bull1">참여비용</span> 
+                                                <em class="txt1">
+                                                
+                                                    20000 원
+                                                
+                                                </em>
+                                            </li>
+                                          </ul>
+                                          
+                                          <a href="#" class="class_close" onclick="fnDetail('59',this); return false;">마감</a>
+                                          
+                                        </li>
+                                        
+                                        
+                                      </ul>
+                                      
+                                    <!--/테이블-->
+                                    <!-- Pagination -->
+                                    <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                                        <span class="page-control">
+                                            <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                                            <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                                        </span>
+                                        <span class="page-number">
+                                            <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                                            <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                                            <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                                        </span>
+                                        <span class="page-control">
+                                            <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                                            <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- /컨텐츠 내용 -->
+                                </div>
+                                </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

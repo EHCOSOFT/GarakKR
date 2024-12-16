@@ -1,0 +1,145 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap faq sub-o sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>자주묻는질문</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="가락몰 소개 이동">가락몰 소개</a></li>
+								<li><a href="#" class="txt" aria-label="가락몰 안내 이동">가락몰 안내</a></li>
+                                <li><a href="#" class="txt" aria-label="자주묻는질문 이동">자주묻는질문</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+                        <!--tabs-->
+                        <div class="tab-wrap">
+                            <div class="row">
+                                <div class="col l12 s12" role="tablist">
+                                    <ul class="tabs">
+                                        <li class="tab" role="presentation">
+                                            <a class="active" href="#test1" role="tab" aria-selected="true" tabindex="0">전체</a>
+                                        </li>
+                                        <li class="tab" role="presentation">
+                                            <a href="#test2" role="tab" aria-selected="false" tabindex="0">위치</a>
+                                        </li>
+                                        <li class="tab" role="presentation">
+                                            <a href="#test2" role="tab" aria-selected="false" tabindex="0">교환</a>
+                                        </li>
+                                        <li class="tab" role="presentation">
+                                            <a href="#test2" role="tab" aria-selected="false" tabindex="0">시간</a>
+                                        </li>
+                                        <li class="tab" role="presentation">
+                                            <a href="#test2" role="tab" aria-selected="false" tabindex="0">주차</a>
+                                        </li>
+                                        <li class="tab" role="presentation">
+                                            <a href="#test2" role="tab" aria-selected="false" tabindex="0">기타</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/tabs-->
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+                            <!--전체-->
+                            <div class="row sec_01 change-area">
+                                <ul class="collapsible clearfix" aria-label="FAQ질문리스트">
+                                    <li class="mb-2">
+                                        <div class="collapsible-header" aria-label="질문내용입니다.">
+                                            <div class="title"><p>질문내용입니다.</p></div>
+                                            <i class="material-icons">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            답변내용입니다.
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="collapsible-header" aria-label="질문내용입니다.">
+                                            <div class="title"><p>질문내용입니다.</p></div>
+                                            <i class="material-icons">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            답변내용입니다.
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="collapsible-header" aria-label="질문내용입니다.">
+                                            <div class="title"><p>질문내용입니다.</p></div>
+                                            <i class="material-icons">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            답변내용입니다.
+                                        </div>
+                                    </li>
+                                </ul>
+                                   
+                            </div>
+                            <!--위치-->
+                            <!--이후동일하게 change-area 삽입하면됨.
+                            sec_01부분은 알아보기 쉽게 하기 위함이며 중요하지않음-->
+                            <div class="row sec_02 change-area">
+                                <ul class="collapsible clearfix" aria-label="FAQ질문리스트">
+                                    <li class="mb-2">
+                                        <div class="collapsible-header" aria-label="질문내용입니다.">
+                                            <div class="title"><p>질문내용입니다.</p></div>
+                                            <i class="material-icons">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            답변내용입니다.
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="collapsible-header" aria-label="질문내용입니다.">
+                                            <div class="title"><p>질문내용입니다.</p></div>
+                                            <i class="material-icons">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            답변내용입니다.
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="collapsible-header" aria-label="질문내용입니다.">
+                                            <div class="title"><p>질문내용입니다.</p></div>
+                                            <i class="material-icons">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            답변내용입니다.
+                                        </div>
+                                    </li>
+                                </ul>
+                                   
+                            </div>
+                            <!-- Pagination -->
+                            <div class="board-pagination" role="navigation" aria-label="페이지네이션">
+                                <span class="page-control">
+                                    <a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" aria-label="첫페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a>
+                                    <a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page" aria-label="이전페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('1');">이전페이지</a>
+                                </span>
+                                <span class="page-number">
+                                    <a href="javascript:void(0);" class="active" title="선택됨" aria-label="1 페이지 선택됨" onclick="javascript:pagingUtil.pageSubmit('1');">1</a>
+                                    <a href="javascript:void(0);" title="2페이지로 이동" aria-label="2 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('2');">2</a>
+                                    <a href="javascript:void(0);" title="3페이지로 이동" aria-label="3 페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('3');">3</a>
+                                </span>
+                                <span class="page-control">
+                                    <a href="javascript:void(0);" title="다음페이지로 이동" class="next-page" aria-label="다음페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">다음페이지</a>
+                                    <a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" aria-label="마지막페이지로 이동" onclick="javascript:pagingUtil.pageSubmit('10');">마지막페이지</a>
+                                </span>
+                                </div>
+                            <!-- /컨텐츠 내용 -->
+                            </div>
+                            </div>
+                                    @@include('./include/quick-link.html')
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </body>
+                @@include('./include/footer.html')
+                </html>

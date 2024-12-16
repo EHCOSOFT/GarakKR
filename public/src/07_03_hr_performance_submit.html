@@ -1,0 +1,114 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap minwon sub pb-0">
+    <div class="contentsWrap">
+        <div class="row section pb-lg-6" role="region" aria-labelledby="section-title">
+            <div class="row section lighten-5 pt-lg-5 pb-sm-0" tabindex="0">
+                <div class="container col l12 s12 flex-top">
+                    <div class="col l2 s12 mr-lg-3">
+                        @@include('./include/snb.html')
+                    </div>
+                    <div class="col l8 s12 mt-sm-5 mr-lg-4">
+                        <div class="title-wrap title-content-wrap mb-4 pb-4" tabindex="0">
+                            <h4 id="section-title">민원양식방</h4>
+                        </div>
+                        <!-- breadcrumb -->
+                        <nav aria-label="breadcrumb" class="breadcrumb-wrap mb-4">
+                            <ol class="breadcrumb">
+                                <li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+                                <li><a href="#" class="txt" aria-label="공사소개 페이지로 이동">공사소개</a></li>
+                                <li><a href="#" class="txt" aria-label="인권경영 페이지로 이동">인권경영</a></li>
+                                <li><a href="#" class="txt" aria-label="인권경영추진실적 페이지로 이동">인권경영추진실적</a></li>
+                            </ol>
+                        </nav>
+                        <!-- breadcrumb -->
+                        <div class="col l12 s12 contents-inner">
+                            <div class="row">
+                                <div class="sub_each">
+                                    <h5 class="tit1 grey-text mb-3">게시글제목 민원신청</h5>
+                                    <h6 class="sub_con_tit1_1 flex left mb-2">개인정보 입력 <p class="write_sup_txt blue-text caption"><span class="red-text ml-2">*</span> 표시는 필수 입력 항목이며 이외의 항목은 선택 입력 항목입니다.</p></h6>
+                                    <!-- formA -->
+                                    <table class="formA">
+                                        <caption class="blind">성명,휴대폰 ,전화번호,주소,이메일 등을 포함한 표</caption>
+                                        <colgroup>
+                                            <col style="width: 15%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">성명 <span class="fc_red">*</span></th>
+                                                <td>
+                                                        <input type="text" name="user_nm" value="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">휴대폰 <span class="fc_red">*</span></th>
+                                                <td>
+                                                        <input type="text" name="hp" value="">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- // formA -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="sub_each">
+                                    <h6 class="sub_con_tit1_1 mb-2">신고내용 입력</h6>
+                                    <table class="formA">
+                                        <caption>제목, 내용, 파일첨부, 공개신청 등을 포함한 표</caption>
+                                        <colgroup>
+                                            <col style="width: 15%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">파일첨부</th>
+                                                <td>
+                                                    <div class="attach_box_outer">
+                                                        <div class="attach_wrapper">
+                                                            <div class="attach_box">
+                                                                <input type="file" name="upload" class="attach_input">
+                                                                <div class="attach_vbox chk_in flex mo-flex left col l12 s12">
+                                                                    <p class="col">
+                                                                        <label>
+                                                                          <input type="checkbox" class="filled-in" checked="checked" />
+                                                                          <span class="blind">파일선택</span>
+                                                                        </label>
+                                                                      </p>
+                                                                    <input type="text" name="file_nm" class="attach_vinput col l12 s12" title="첨부파일명 보기 1" readonly>
+                                                                    <button type="button" class="attach_btn">파일선택</button>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="attach_ar_btn_box row right mt-2 mb-sm-0">
+                                                        <button type="button" class="attach_ar_btn attach_box_add">+ 추가</button>
+                                                        <button type="button" class="attach_ar_btn attach_box_del">- 삭제</button>
+                                                    </div>
+                                                    <p class="write_sup_txt att"></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+
+                            <div class="common_btn_box">
+                                <a href="#" class="common_btn btn-large" onclick="fnInsert(); return false;">등록</a> 
+                                <a href="#" class="common_btn cancel btn-large grey" onclick="fnList(); return false;">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                    @@include('./include/quick-link.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

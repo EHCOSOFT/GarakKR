@@ -1,0 +1,220 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap formA_submit sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>사장에게바란다</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="고객센터">고객센터</a></li>
+								<li><a href="#" class="txt" aria-label="고객지원 이동">고객지원</a></li>
+                                <li><a href="#" class="txt" aria-label="사장에게바란다 이동">사장에게바란다</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="col l12 s12">
+                                <div class="sub_con">
+                                    <script>
+                                    function moveTab(murl, targetId) {
+                                            murl = murl.replace("R010680=", "");
+                                            murl = murl.replace("R010690=", "");
+                                            murl = murl.replace("R010700=", "");
+                                            murl = murl.replace("R010710=", "");
+                                        
+                                            var strUrl = murl.substring(murl.indexOf("?")+1, murl.length);
+                                            var strPath = strUrl.split("&"); 	
+                                            
+                                            $("#R010680").val(strPath[0]);
+                                            $("#R010690").val(strPath[1]);
+                                            $("#R010700").val(strPath[2]);
+                                            $("#R010710").val(strPath[3]);	
+                                            $("#s_pummok1").val("고구마");
+                                    
+                                            if(targetId != "") {
+                                              $("#aForm1").attr({action: "/price/OZViewer.do", target:targetId, method:"post"}).submit();
+                                            } else {
+                                                $("#aForm1").attr({action: "/price/OZViewer.do", method:"post"}).submit();
+                                            }
+                                    }
+                                    
+                                    function goRealTimeUrl(url) {
+                                        if(url.indexOf("garak") > 0) {
+                                            $("#market").val("garak");	
+                                        } else {
+                                            $("#market").val("gangseo");
+                                        }
+                                        $("#aForm2").attr({action: "/price/realTimeAuctionStatus.do", target:"", method:"post"}).submit();
+                                    }
+                                    
+                                    function innerWords(menuId) {	
+                                        if(menuId == "100020002000110018001000") {
+                                                location.href = "/tenant/loginTenant.do?tenantRedirectUrl=/tenant/selectTenant.do&menuId="+menuId;
+                                        } else if(menuId == "100020002000110018001100") {
+                                                location.href = "/tenant/loginTenant.do?tenantRedirectUrl=/tenant/selectEvalGrade.do&menuId="+menuId;
+                                        } else if(menuId == "100020002000110018001400") {
+                                                location.href = "/tenant/loginTenant.do?tenantRedirectUrl=/tenant/selectStaff.do&menuId="+menuId;
+                                        } else if(menuId == "100020002000110018001200") {
+                                                location.href = "/tenant/inquiryTenant.do?menuId="+menuId;
+                                        }
+                                    }
+                                    
+                                    </script>
+                                    <form name="aform" id="aform" method="post" action="/minwon/insertMinwon.do" enctype="multipart/form-data">
+                                        <input type="hidden" name="jumin1" value="MC0GCCqGSIb3DQIJAyEAtaSbQ73GIUmkT2FArh3PH0M+6EQiJNmTjxmZ8H9uO64=">
+                                        <input type="hidden" name="jumin2" value="">
+                                        <input type="hidden" name="req_kind_code" value="01300000">
+                                        <input type="hidden" name="req_pw" value="1">
+                                        <input type="hidden" name="reply_mtd_code" id="reply_mtd_code_0" value="05020100">
+                                        <input type="hidden" name="offline_yn" value="N">
+                                        
+                                        <div id="imageBox"></div>
+                                        <div class="sub_each mb-3">
+                                            <h5 class="sub_con_tit2 flex left">개인정보 입력 <p class="write_sup_txt blue-text caption ml-lg-2"><span class="fc_red">*</span> 표시는 필수 입력 항목이며 이외의 항목은 선택 입력 항목입니다.</p></h5>
+                                            <!-- formA -->
+                                            <table class="formA">
+                                                <caption>성명,휴대폰  등을 포함한 표</caption>
+                                                <colgroup>
+                                                    <col style="width: 15%;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">성명 <span class="fc_red">*</span></th>
+                                                        <td>
+                                                                <input type="text" name="user_nm" value="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">휴대폰 <span class="fc_red">*</span></th>
+                                                        <td>
+                                                                <input type="text" name="hp" value="">
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                            <!-- // formA -->
+                                        </div>
+                                        <!-- // sub_each -->
+                                        <div class="sub_each">
+                                            <h5 class="sub_con_tit2">신고내용 입력</h5>
+                                            <!-- formA -->
+                                            <table class="formA">
+                                                <caption>제목,내용,파일첨부,공개신청 등을 포함한 표</caption>
+                                                <colgroup>
+                                                    <col style="width: 15%;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row">민원인 유형<span class="fc_red">*</span></th>
+                                                    <td>
+                                                        <div class="input-field col l12 s12">
+                                                            <label for="req_regnt_code" class="hide">민원인 유형</label>	                    
+                                                            <select name="req_regnt_code" class="req_regnt_code " title="민원인 유형 선택">
+                                                                <option value="11000000">민원인유형</option>
+                                                                <option value="11020000">출하자</option>
+                                                                <option value="11030000">구매자</option>
+                                                                <option value="11040000">일반시민</option>
+                                                                <option value="11050000">기타</option>
+                                                                <option value="11060000">입주자</option>
+                                                                <option value="11070000">중도매인</option>
+                                                                <option value="11080000">인근주민</option>
+                                                            </select>   
+                                                        </div>
+                                                    </td>
+                                                    </tr> 
+                                                                    <tr>
+                                                    <th scope="row">제목<span class="fc_red">*</span></th>
+                                                    <td><label for="req_ttl" class="hide">제목</label><input type="text" id="req_ttl" name="req_ttl" class="full_input" value="" maxlength="40"></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row"><label for="req_cont">내용</label><span class="fc_red">*</span></th>
+                                                    <td>
+                                                        <textarea name="req_cont" id="req_cont" cols="30" rows="8" style="height: 10rem;"></textarea>
+                                                        <p class="write_sup_txt blue-text body-2 mt-2">* 개인정보가 타인에게 노출되어 침해 받을 수 있으니 &lt;주민등록번호, 주소 등 개인정보&gt;에 대한 사항은 삭제하여 주시기 바랍니다.</p>
+                                                    <p class="write_sup_txt blue-text body-2">* 타인의 개인정보를 게재하는 경우 명예훼손 등으로 고발될 수 있으니 신중히 결정 바랍니다.</p>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row">파일첨부</th>
+                                                    <td>
+                                                    <!-- attach_box_outer -->
+                                                    <div class="attach_box_outer">
+                                                        <div class="attach_wrapper">
+                                                            <div class="attach_box">
+                                                                <input type="file" name="upload" class="attach_input">
+                                                                <div class="attach_vbox chk_in">
+                                                                    <span class="attach_chk_box"> <input type="checkbox" name="att_chk" id="att_chk1" class="rdbox" title="해당 첨부파일 선택 1">
+                                                                        <label for="att_chk1"> <span class="radio"></span></label>
+                                                                    </span> <input type="text" name="file_nm" class="attach_vinput" title="첨부파일명 보기 1" readonly="readonly">
+                                                                    <button type="button" class="attach_btn">파일선택</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="attach_ar_btn_box">
+                                                            <button type="button" class="attach_ar_btn attach_box_add">+ 추가</button>
+                                                            <button type="button" class="attach_ar_btn attach_box_del">- 삭제</button>
+                                                        </div>
+                                                    </div>
+                                                    <p class="write_sup_txt att"></p>
+                                                    <!-- // attach_box_outer -->
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row">공개신청</th>
+                                                    <td>
+                                                        <span class="input_radio_box mb-2">
+                                                        <span class="radio_each mr-2">
+                                                            <label>
+                                                                <input type="radio" name="open_yn" id="open_y" class="hide with-gap" value="Y">
+                                                                <span>예</span>
+                                                            </label>
+                                                        </span>
+                                                        <span class="radio_each">
+                                                            <label>
+                                                                <input type="radio" name="open_yn" id="open_n" class="hide with-gap"value="N" checked="checked">
+                                                                <span>아니오</span>
+                                                            </label>
+                                                        </span>
+                                                       
+                                                        <p class="write_sup_txt body-1">* 공개 신청 시 공사 담당자의 승인하에 공개됩니다.</p>
+                                                        </span>
+                                                    </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // formA -->
+                                        </div>
+                                        <!-- // sub_each -->
+                                    </form>
+                                    <div class="common_btn_box">
+                                        <a href="#" class="common_btn btn-large" onclick="fnInsert(); return false;">등록</a> 
+                                        <a href="#" class="common_btn cancel btn-large grey" onclick="fnList(); return false;">취소</a>
+                                    </div>
+                                </div>
+                            </div>
+						<!-- /컨텐츠 내용 -->
+                         </div>
+                         </div>
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>

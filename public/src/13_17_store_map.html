@@ -1,0 +1,132 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap sub-o market-status sub pb-0">
+	<div class="contentsWrap">
+		<div class="row section pb-lg-4">
+			<div class="row section lighten-5 pt-lg-5 pb-0">
+				<div class="container col l12 s12 flex-top">
+					<div class="col l2 s12 mr-lg-3">
+						@@include('./include/snb.html')
+					</div>
+					<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+						<div class="title-wrap title-content-wrap mb-4 pb-4">
+							<h4>시장배치도에서찾기</h4>
+						</div>
+						<!-- breadcrumb -->
+						<nav aria-label="Breadcrumb" class="breadcrumb-wrap mb-4">
+							<ol class="breadcrumb">
+								<li><a href="#" class="home" aria-label="홈으로 이동"></a></li>
+								<li><a href="#" class="txt" aria-label="시장안내 이동">시장안내</a></li>
+								<li><a href="#" class="txt" aria-label="점포찾기 이동">점포찾기</a></li>
+                                <li><a href="#" class="txt" aria-label="시장배치도에서찾기 이동">시장배치도에서찾기</a></li>
+							</ol>
+						</nav>
+						<!-- breadcrumb -->
+						<!-- 컨텐츠 내용 -->
+						<div class="col l12 s12 contents-inner" role="main">
+							<div class="row sec_01">
+                                <div class="sub_tit_box">
+                                    <img src="images/icon_market-search_top.svg" alt="시장배치도에서찾기 아이콘" tabindex="0">
+                                    <div class="txt1">
+                                        <h6 tabindex="0">점포 찾기 사용 안내</h6>
+                                        <p class="body-1" tabindex="0">검색창에서 상호, 대표자 등으로 조회한 결과를 클릭하면 지도에서 위치를 확인할 수 있습니다.
+                                            가락몰, 청과동, 수산동은 별도의 3D배치도 화면에서 위치가 표시됩니다.(점포찾기<img src="images/img-market-search_poi_2d_blue.png" alt="점포찾기" style="display: inline-block; position: relative; width: 24px; left: inherit;">
+                                            클릭해서 3D시장이동도 가능)
+                                            <br>
+                                            <span class="red-text">※ 별도 조회버튼없이 검색어를 입력하면 결과가 표시됩니다</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--새로퍼블할경우-->
+                                <div class="tab-wrap">
+                                    <div class="row">
+                                    <div class="col l12 s12">
+                                        <ul class="tabs" role="tablist">
+                                            <li class="tab" role="presentation"><a class="active" href="#test1" aria-controls="test1" role="tab">가락몰·가락시장</a></li>
+                                            <li class="tab" role="presentation"><a href="#test2" aria-controls="test2" role="tab">강서시장</a></li>
+                                            <li class="tab" role="presentation"><a href="#test3" aria-controls="test3" role="tab">양곡시장</a></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!--날짜검색 필드-->
+                                <div class="inp_cal field-default flex-top col l12 s12 mb-lg-3 mb-sm-4 p-3">
+
+                                    <div class="select-wrap col s12">
+                                
+                                    <div class="form-wrap ml-lg-3">
+                                        <div class="input-field flex">
+                                    <select id="category" name="category" class="w155">
+                                            <option value="">전체</option>
+                                            <option value="compNm">상호</option>
+                                            <option value="rptvrNm">대표자</option>
+                                            <option value="mrchntNm">상인구분</option>
+                                            <option value="handlClssNm">취급구분</option>
+                                            <option value="fctyNm">상점위치</option>
+                                            <option value="wrkPlcTelNo">사업장전화번호</option>
+                                        </select>
+                                        <li class="col s12 ml-2">
+                                            <input type="text" class="search col right s12" name="sch_text" title="검색어 입력" placeholder="검색어 입력" value="">
+                                            </li>
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="srch-wrap col s12 right">
+                                    <ul class="right col s12">
+
+                                        <li class="mr-2">
+                                        <a href="#" class="btn" aria-label="검색 버튼">검색</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn btn-dark" aria-label="초기화 버튼">초기화</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <!--/날짜검색 필드-->
+                                <div class="map_wrap">
+                                    
+                                    <div id="map" style="width: 100%; height: 620px; z-index: 0; position: relative; overflow: hidden; background: url(&quot;https://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png&quot;);"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; touch-action: none; cursor: default;"><div style="position: absolute;"><div style="position: absolute; z-index: 0;"></div><div style="position: absolute; z-index: 1; left: 0px; top: 0px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/982/467.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -8px; top: 563px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/982/468.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 248px; top: 563px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/982/469.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 504px; top: 563px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/982/470.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 760px; top: 563px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/982/471.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 1016px; top: 563px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/983/467.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -8px; top: 307px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/983/468.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 248px; top: 307px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/983/469.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 504px; top: 307px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/983/470.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 760px; top: 307px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/983/471.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 1016px; top: 307px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/984/467.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -8px; top: 51px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/984/468.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 248px; top: 51px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/984/469.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 504px; top: 51px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/984/470.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 760px; top: 51px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/984/471.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 1016px; top: 51px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/985/467.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -8px; top: -205px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/985/468.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 248px; top: -205px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/985/469.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 504px; top: -205px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/985/470.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 760px; top: -205px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img src="https://mts.daumcdn.net/api/v1/tile/PNG02/v03_trve1/latest/4/985/471.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 1016px; top: -205px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"></div><div style="position: absolute; z-index: 1;"></div><div style="width: 853px; height: 620px; position: absolute; z-index: 1;"></div><div style="position: absolute; z-index: 1;"><svg version="1.1" style="stroke: none; stroke-dashoffset: 0.5; stroke-linejoin: round; fill: none; transform: translateZ(0px); position: absolute; width: 4265px; height: 3100px; left: -1706px; top: -1240px;" viewBox="0 0 4265 3100"><defs></defs><path id="daum-maps-shape-0" style="stroke: rgb(57, 222, 42); stroke-opacity: 0.8; stroke-width: 3px; color: rgb(57, 222, 42); stroke-linecap: round; fill: rgb(162, 255, 153); fill-opacity: 0.3; fill-rule: evenodd; display: block;" d=" M1756 1524 L1783 1546 1803 1560 1819 1572 1843 1593 1856 1605 1903 1650 1920 1669 1946 1706 1956 1722 1977 1763 2369 1611 2377 1603 2208 1373 2197 1365 2189 1362 2179 1360 2167 1359 2156 1361 2128 1371 1758 1518 1756 1523 Z" transform="translate(0,0)"></path><path id="daum-maps-shape-1" style="stroke: rgb(0, 0, 0); stroke-opacity: 0.8; stroke-width: 1px; color: rgb(0, 0, 0); stroke-linecap: round; fill: rgb(255, 255, 0); fill-opacity: 0.7; fill-rule: evenodd; display: block;" d=" M1819 1506 L1851 1594 1997 1537 1963 1451 Z" transform="translate(0,0)"></path></svg></div><div style="position: absolute; z-index: 1; width: 100%; height: 0px; transform: translateZ(0px);"><div style="position: absolute; margin: -31px 0px 0px -15px; z-index: 0; left: 596px; top: 301px;"><img draggable="false" src="https://www.garak.co.kr:4485/resources/images/poi_2d_blue.png" alt="" role="presentation" title="가락몰" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; clip: rect(0px, 32px, 32px, 0px); top: 0px; left: 0px; width: 32px; height: 32px;"></div><div style="position: absolute; z-index: 0; white-space: nowrap; margin: 0px 0px 0px -25px; left: 596px; top: 301px;"><div class="poi_title three_dimensions"><span class="poi_nm"> 3D 가락몰</span></div></div><div style="position: absolute; margin: -31px 0px 0px -15px; z-index: 0; left: 426px; top: 310px;"><img draggable="false" src="https://www.garak.co.kr:4485/resources/images/poi_2d_blue.png" alt="" role="presentation" title="가락청과시장" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; clip: rect(0px, 32px, 32px, 0px); top: 0px; left: 0px; width: 32px; height: 32px;"></div><div style="position: absolute; z-index: 0; white-space: nowrap; margin: 0px 0px 0px -41px; left: 426px; top: 310px;"><div class="poi_title three_dimensions"><span class="poi_nm"> 3D 가락청과시장</span></div></div><div style="position: absolute; margin: -31px 0px 0px -15px; z-index: 0; left: 249px; top: 359px;"><img draggable="false" src="https://www.garak.co.kr:4485/resources/images/poi_2d_blue.png" alt="" role="presentation" title="가락수산시장" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; clip: rect(0px, 32px, 32px, 0px); top: 0px; left: 0px; width: 32px; height: 32px;"></div><div style="position: absolute; z-index: 0; white-space: nowrap; margin: 0px 0px 0px -41px; left: 249px; top: 359px;"><div class="poi_title three_dimensions"><span class="poi_nm"> 3D 가락수산시장</span></div></div><div style="position: absolute; margin: -55px 0px 0px -27px; z-index: 0; left: 202px; top: 297px;"><img draggable="false" src="https://www.garak.co.kr:4485/resources/images/under-construction.png" alt="" role="presentation" title="" style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; clip: rect(0px, 56px, 56px, 0px); top: 0px; left: 0px; width: 56px; height: 56px;"></div></div></div></div><div style="position: absolute; cursor: default; z-index: 1; margin: 0px 6px; height: 19px; line-height: 14px; left: 0px; bottom: 0px; color: rgb(0, 0, 0);"><div style="color: rgb(0, 0, 0); text-align: center; font-size: 10px; float: left;"><div style="float: left; margin: 2px 3px 0px 4px; height: 6px; transition: width 0.1s; border-top: none rgb(0, 0, 0); border-right: 2px solid rgb(0, 0, 0); border-bottom: 2px solid rgb(0, 0, 0); border-left: 2px solid rgb(0, 0, 0); border-image: initial; width: 46px;"></div><div style="float: left; margin: 0px 4px 0px 0px; font-family: AppleSDGothicNeo-Regular, 돋움, dotum, sans-serif; font-weight: bold; color: rgb(0, 0, 0);">100m</div></div><div style="margin: 0px 4px; float: left;"><a target="_blank" href="http://map.kakao.com/" style="float: left; width: 32px; height: 10px;"><img src="https://t1.daumcdn.net/mapjsapi/images/2x/m_bi_b.png" alt="Kakao 맵으로 이동(새창열림)" style="float: left; width: 32px; height: 10px; border: none;"></a><div style="font: 11px / 11px Arial, Tahoma, Dotum, sans-serif; float: left;"></div></div></div><div style="cursor: auto; position: absolute; z-index: 2; left: 0px; top: 0px;"></div></div>
+                                </div>
+                                <!--/새로퍼블할경우-->
+
+                                <!--소스 그대로 붙일경우 주석으로 지워놓음-->
+                                <!-- <div class="sub_con">
+                                    <iframe id="pluxity_iframe" src="https://www.garak.co.kr:4485/" style="width:100%;height:820px;" title="시장배치도에서찾기"></iframe>
+                                </div> -->
+                                  <!--/소스 그대로 붙일경우 -->
+                            </div>
+						</div>
+                    <!-- /컨텐츠 내용 -->
+                    </div>
+
+					@@include('./include/quick-link.html')
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
+<!--지도 가운데 새창 열기 스크립트-->
+<script LANGUAGE="Javascript">
+    function openwindow(opage) {
+        // 브라우저 너비에 따른 창 크기 조정
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+    
+        // 1025px 이하일 경우 모바일, 그 이상은 데스크톱으로 간주
+        var windowWidth = screenWidth > 1025 ? screenWidth * 0.8 : screenWidth * 0.9;
+        var windowHeight = screenHeight > 1025 ? screenHeight * 0.8 : screenHeight * 0.9;
+    
+        // 새 창을 중앙에 배치
+        var left = (screenWidth / 2) - (windowWidth / 2);
+        var top = (screenHeight / 2) - (windowHeight / 2);
+    
+        // 새 창 열기
+        window.open(opage, 'Links', 'width=' + windowWidth + ', height=' + windowHeight + ', toolbar=0, scrollbars=0, resizable=no, top=' + top + ', left=' + left);
+    }
+    </script>

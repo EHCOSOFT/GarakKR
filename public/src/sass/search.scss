@@ -1,0 +1,324 @@
+@charset "utf-8";
+@import "components/global";
+@import "components/typography";
+@import "components/color-variables";
+
+
+#contents.serCh {
+  float: none;
+  width: 100%;
+}
+
+.search_result {
+  mark {
+    word-break: break-all;
+  }
+
+  .search_form {
+    padding: 1.7rem 1.7rem 0.8rem;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+    background: #F6F7F9;
+
+    form {
+   
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    input.form_textbox {
+      position: relative;
+      border: 1px solid #ddd;
+      margin-bottom: 0;
+    }
+
+    .btn {
+      min-width: 6rem;
+      background: $light-primary-main;
+      color: #fff;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      font-size: 1rem;
+      > i {
+        margin-right: 3px;
+      }
+
+    }
+
+    .group_a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+
+  .re_search {
+    margin: 0.5rem 0 1rem;
+  }
+  .tags{
+    span{
+      color: $light-text-primary;
+    }
+    .tag{
+      margin-right: .4rem;
+      padding: .5rem .8rem;
+      background: $light-common-white;
+      border-radius: 3rem;
+      border: 1px solid $table-border-color;
+    }
+    .tags:last-child{
+      margin-right: 0;
+    }
+  }
+  .search_form .group_b {
+    margin-bottom: 1.5rem;
+    display: none;
+
+    &.active {
+      display: block;
+
+    }
+
+    .btn_radio:first-child label {
+      border-left: 1px solid #ddd;
+    }
+
+    .part {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      .date-wrap .form-wrap input{
+        height: inherit;
+        padding: 0.7rem 0.96831rem 0.7rem 1rem;
+      }
+      + .part {
+        margin-top: 0.4rem;
+      }
+
+      .label {
+        margin-right: 1rem;
+      }
+
+      .inn {
+        .btn_radio {
+          float: left;
+        }
+
+        &.t2 {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .bTn {
+          overflow: hidden;
+        }
+
+      }
+
+      .date {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .search_form .search_detail_btn {
+    display: block;
+    text-align: center;
+    padding: .3rem 0 .5rem 0;
+
+    i {
+      display: inline-block;
+    }
+    &.active i {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+  .btn_radio {
+    display: inline-block;
+    vertical-align: middle;
+
+    input[type=radio] {
+      overflow: hidden;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0 none;
+      clip: rect(0, 0, 0, 0);
+
+      &:checked + label {
+        background-color: $light-primary-dark;
+        color: #fff;
+        border-color: $light-primary-dark;
+      }
+    }
+
+    label {
+      @include font-light-typography-body-1;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      padding: 0.5625rem 0.96831rem 0.5625rem 1rem;
+      background-color: #fff;
+      color: #6A6A6A;
+      border: 1px solid #ddd;
+      width: 100%;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      font-weight: 500;
+      border-left: 0 none;
+      letter-spacing: -0.45px;
+
+      &:hover {
+        text-decoration: underline;
+        color: #000;
+      }
+    }
+  }
+  .search-tit1{
+    border-bottom: 1px solid #000;
+  }
+  .search-list{
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $light-other-divider;
+    .breadcrumb-wrap  {
+    justify-content: start;
+   
+      .breadcrumb{width: auto;
+      justify-content: start;
+    }
+    .date{
+      margin-left: .6rem;
+      color: $light-text-secondary;
+    }
+    }
+    .breadcrumb.active{
+      li{
+        a{
+          color: $light-primary-main;
+        }
+      }
+    }
+    .breadcrumb{
+      li{
+        a{
+          color: $light-text-primary;
+        }
+        a.active{
+          color: $light-primary-main;
+        }
+      }
+    }
+    .image-wrap {
+  
+      .image-box {
+          width: 100%;
+          text-align: center;
+  
+          img {
+              width: 100%;
+              height: auto;
+              max-height: 200px; // 최대 높이 지정, 필요 시 조정
+              display: block;
+              object-fit: cover;
+              margin: 0 auto;
+          }
+      }
+      p {
+        margin: 1rem 0;
+        display: -webkit-box;
+        line-clamp: 1;
+        -webkit-line-clamp: 1; /* 최대 2줄까지 표시 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;	
+      }
+  }
+  
+  }
+  .search-detail{
+    /* 말줄임 처리 */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2; /* 최대 2줄까지 표시 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;	
+  }
+  .more-btn{
+    padding: .7rem 0;
+    border: 1px solid #999;
+    background: #F6F7F9;
+    color: #505450;
+    font-size: 1rem;
+    font-weight: 500;
+    i{
+      font-size: 1rem;
+      padding-left: .3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .search_result{
+    .btn_radio{
+      label{
+        font-size: .85rem;
+        padding: .4rem .8rem;
+      }
+    }
+    .change-area{
+      margin-bottom: 0;
+    }
+    .search_form .group_b {
+      .part{
+        align-items: start;
+        .body-1-semibold{
+          @include font-light-typography-body-2-semibold;
+          margin-top: .55rem;
+        }
+        .inn.t2{
+          display: block;
+        }
+      }
+    }
+    .search-list{
+      .image-wrap{
+        margin-top: .5rem;
+        p{
+          line-clamp: 2;
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+    .tags{
+      .body-1-semibold{
+        @include font-light-typography-body-2-semibold;
+        margin-top: .25rem;
+      }
+      li{
+        display: inline-block;
+        .tag{
+          margin: 0;
+          margin-bottom: .3rem;
+          display: inline-block;
+          padding: .3rem .6rem;
+          @include font-light-typography-body-2;
+        }
+      }
+    }
+
+  }
+}

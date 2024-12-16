@@ -1,0 +1,69 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap hr sub pb-0">
+	<div class="contentsWrap">
+			<div class="row section pb-lg-6">
+				<div class="row section lighten-5 pt-lg-5">
+					<div class="container col l12 s12 flex-top">
+						<div class="col l2 s12 mr-lg-3">
+							@@include('./include/snb.html')
+
+						</div>
+						<div class="col l8 s12 mt-sm-5 mr-lg-4 main-wrap">
+							<div class="title-wrap title-content-wrap mb-4 pb-4">
+								<h4 tabindex="0">인재상</h4> <!-- 키보드 접근 가능 -->
+							</div>
+							<!-- breadcrumb -->
+							<div class="breadcrumb-wrap mb-4" role="navigation" aria-label="Breadcrumb">
+								<ol class="breadcrumb">
+									<li><a href="#" class="home" aria-label="홈으로 이동" tabindex="0"></a></li>
+									<li><a href="#" class="txt" aria-label="인재채용으로 이동" tabindex="0">인재채용</a></li>
+									<li><a href="#" class="txt" aria-label="인재상으로 이동" tabindex="0">인재상</a></li>
+								</ol>
+							</div>
+						<!-- breadcrumb -->
+						<!--컨텐츠 내용-->
+						<div class="col l12 s12 contents-inner center">
+								<div class="row">
+										<div class="title-wrap">
+												<h5 class="center" tabindex="0">HRD VISION</h5> <!-- 키보드 접근 가능 -->
+										</div>
+								</div>
+								<div class="row">
+										<div class="vision-wrap">
+												<p tabindex="0">
+														<span class="highlight">미래형 도매시장 구현 역량을 갖춘</span>
+														시민과 함께하는 전문가 양성
+												</p>
+										</div>
+								</div>
+								<div class="row image-wrap">
+										<div class="col l12 s10">
+												<img src="images/hr_chart.svg" alt="HR 비전 차트" class="col l7 s12"> <!-- alt 텍스트 추가 -->
+										</div>
+								</div>
+						</div>
+						<!--/컨텐츠 내용-->
+						</div>
+						@@include('./include/quick-link.html')
+					</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
+<script>
+	$(".board-ico").click(function() {
+		 $(this).parent().siblings(".files-info").show();
+		 return false;
+ });
+ $(".close_files").click(function() {
+		 $(this).parent().hide();
+		 return false;
+ });
+ </script>

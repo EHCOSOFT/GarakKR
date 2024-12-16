@@ -1,0 +1,226 @@
+@@include('./include/header.html')
+@@include('./include/gnb.html')
+<div class="containerWrap board sub pb-0">
+  <div class="contentsWrap">
+      <div class="row section pb-lg-6">
+        <div class="row section lighten-5 pt-lg-5 pb-5">
+          <div class="container col l12 s12 flex-top">
+            <div class="col l2 s12 mr-lg-3">
+              @@include('./include/snb.html')
+
+            </div>
+            <div class="col l8 s12 mt-sm-5 mr-lg-4">
+              <div class="title-wrap title-content-wrap mb-4 pb-4">
+                <h4>게시판 포토형</h4>
+              </div>
+              <!-- breadcrumb -->
+              <div class="breadcrumb-wrap mb-4">
+                <ol class="breadcrumb">
+                  <li><a href="#" class="home"></a></li>
+                  <li><a href="#" class="txt">공사소개</a></li>
+                  <li><a href="#" class="txt">인권경영</a></li>
+                  <li><a href="#" class="txt">인권경영추진실적</a></li>
+                </ol>
+              </div>
+            <!-- breadcrumb -->
+             <!--날짜검색 필드-->
+             <div class="inp_cal flex col l12 s12 mb-sm-4 mb-lg-3">
+              <div class="date-wrap col l4 s12">
+                <div class="form-wrap">
+                  <input type="text" id="sch_begin_dt" name="sch_begin_dt" title="시작 날짜" class="datepicker  hasDatepicker" value="" placeholder="시작일" onkeyup="calFomatter(this);">
+                 </div>
+                 <span class="ip_txt">~</span>
+                 <div class="form-wrap">
+                   <input type="text" id="sch_end_dt" name="sch_end_dt" title="끝 날짜" class="datepicker sch_calendar hasDatepicker" value="" placeholder="종료일" onkeyup="calFomatter(this);">
+                 </div>
+              </div>
+              <div class="select-wrap col l4 s12">
+                <div class="form-wrap ml-lg-3 col l7 s6">
+                  <div class="input-field mr-sm-3">
+                    <select>
+                      <option value="" disabled selected>분류전체</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-wrap ml-lg-3 col l4 s6">
+                  <div class="input-field">
+                    <select>
+                      <option value="" disabled selected>전체</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="srch-wrap col l4 s12 right">
+                <ul class="right col s12">
+                  <li class="col s12 mr-lg-2">
+                    <input type="text" class="search col right l8 s12" name="sch_text" title="검색어 입력" placeholder="검색어 입력" value="">
+                  </li>
+                  <li>
+                    <a href="#" class="btn">검색</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#" class="btn">초기화</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+             <!--/날짜검색 필드-->
+             <!--건수-->
+             <div class="row">
+                <span class="col total mr-2">전체 <b>3820</b>건 </span> <span class="current"> (<strong>1</strong>/<span>382</span>)</span>
+             </div>
+             <!--/건수-->
+             <div class="board_list">
+                <ul class="board_pdf">
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2024년 7+8월호</strong>
+
+                                </div>
+
+                              <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2024년 5+6월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2024년 3+4월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2024년 1+2월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2023년 11+12월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2023년 9+10월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2023년 7+8월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li tabindex="0">
+                            <i class="thumb" aria-hidden="true">
+                                <img src="images/boardImgView_sample.jpg" alt="2024년 7+8월호">
+                            </i>
+                            <div class="group">
+                                <div class="item">
+                                    <strong class="title">2023년 5+6월호</strong>
+
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn outlined">다운로드</a>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+            </div>
+            <div class="row board-pagination">
+                <span class="page-control"><a href="javascript:void(0);" title="첫페이지로 이동" class="first-page" onclick="javascript:pagingUtil.pageSubmit('1');">처음페이지</a><a href="javascript:void(0);" title="이전페이지로 이동" class="prev-page"onclick="javascript:pagingUtil.pageSubmit('1');" >이전페이지</a></span><span class="page-number"><a href='javascript:void(0);' class='active' title='선택됨' onclick='javascript:pagingUtil.pageSubmit('1');>1</a><a href='javascript:void(0);' title='2페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("2");'>2</a><a href='javascript:void(0);' title='3페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("3");'>3</a><a href='javascript:void(0);' title='4페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("4");'>4</a><a href='javascript:void(0);' title='5페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("5");'>5</a><a href='javascript:void(0);' title='6페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("6");'>6</a><a href='javascript:void(0);' title='7페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("7");'>7</a><a href='javascript:void(0);' title='8페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("8");'>8</a><a href='javascript:void(0);' title='9페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("9");'>9</a><a href='javascript:void(0);' title='10페이지로 이동' onclick='javascript:pagingUtil.pageSubmit("10");'>10</a></span><span class="page-control"><a href="javascript:void(0);" title="다음페이지로 이동" class="next-page"onclick="javascript:pagingUtil.pageSubmit('10');" >다음페이지</a><a href="javascript:void(0);" title="마지막페이지로 이동" class="last-page" onclick="javascript:pagingUtil.pageSubmit('10');">처음페이지</a></span>
+              </div>
+            </div>
+            @@include('./include/quick-link.html')
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+</div>
+</div>
+</body>
+@@include('./include/footer.html')
+</html>
