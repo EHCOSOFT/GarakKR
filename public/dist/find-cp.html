@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>서울시농수산식품공사</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta name="description" content="서울시농수산식품공사">
+  <meta name="keywords" content="서울시농수산식품공사">
+  <meta property="og:site_name" content="서울시농수산식품공사">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울시농수산식품공사">
+  <meta property="og:description" content="서울시농수산식품공사">
+  <meta property="og:url" content="https://visionpointad.ai/">
+  
+  <!-- 로컬 파일을 사용한 스타일 시트 -->
+  <link rel="stylesheet" type="text/css" href="css/front/materialize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/front/media.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/front/search.css" media="all">
+  <!-- 아이콘 폰트 로컬 사용 -->
+  <link rel="stylesheet" href="fonts/material-icons/material-icons.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 로컬 파일을 사용한 스크립트 -->
+  <script src="js/front/docs/js/jquery-1.12.4.min.js"></script>
+  <script src="js/front/docs/js/swiper.min.js"></script>
+  <script src="js/front/materialize.min.js"></script>
+  <script src="js/front/global.js"></script>
+  <script src="js/front/docs/js/jquery.timeago.min.js"></script>
+  <script src="js/front/docs/js/prism.js"></script>
+  <script src="js/front/docs/js/lunr.min.js"></script>
+  <script src="js/front/docs/js/search.js"></script>
+  <script src="js/front/docs/js/init.js"></script>
+</head>
+<body id="top">
+  <div class="wrapper">
+    <!-- 내용 -->
+  </div>
+
+  <script>
+    $(".sidenav-trigger").click(function() {
+       $(this).addClass("active");
+       $(this).parent('li').siblings().children('a').removeClass("active");
+       $(this).siblings(".dept2").slideToggle();
+       return false;
+    });
+    $(".btn-menu-toggle").click(function() {
+       $(this).addClass("active");
+       $(this).parent('li').siblings().children('a').removeClass("active");
+       $(this).siblings(".dept2").slideToggle();
+       return false;
+    });
+  </script>  
+</body>
+</html>
+<div class="col l12 s12 market-login mk-pop m-3">
+  <div class="shipment mt-sm-5 pb-5">
+    <h3 class="tit1 center">
+      “<b class="bold">비밀번호</b>를 변경하실 수 있습니다.”
+    </h3>
+    <div class="sub_txt2">
+      <ul class="gr_list">
+        <li>간편인증을 통해 비밀번호를 변경하실 수 있습니다.</li>
+        <li>본인확인 용도 외에 사용되거나 저장되지 않습니다.</li>
+      </ul>
+    </div>
+    <form name="cp" action="#" method="post">
+      <input type="hidden" name="crtfc_type" value="cp">
+      <div class="num_search pcs1">
+        <div>
+          <table class="formA">
+            <caption class="blind">아이디, 기존 비밀번호, 변경할 비밀번호, 변경할 비밀번호 확인, 휴대폰 번호, 인증 번호 등을 포함한 표</caption>
+            <colgroup>
+              <col style="width: 30%;">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th><label for="pw_change_id">아이디</label></th>
+                <td><input type="text" name="user_id" id="pw_change_id" title="아이디" class="full_input"></td>
+              </tr>
+              
+              <tr>
+                <th><label for="pwd">기존 비밀번호</label></th>
+                <td><input type="password" name="pwd" id="pwd" class="full_input" title="기존 비밀번호" data-tk-kbdtype="qwerty" onfocus="tk.onKeyboard(this);"></td>
+              </tr>
+              <tr>
+                <th><label for="new_pwd">변경할 비밀번호</label></th>
+                <td><input type="password" name="new_pwd" id="new_pwd" class="full_input" title="변경할 비밀번호" data-tk-kbdtype="qwerty" onfocus="tk.onKeyboard(this);"></td>
+              </tr>
+              <tr>
+                <th><label for="new_pwd_chk">변경할 비밀번호 확인</label></th>
+                <td><input type="password" name="new_pwd_chk" id="new_pwd_chk" class="full_input" title="변경할 비밀번호 확인" data-tk-kbdtype="qwerty" onfocus="tk.onKeyboard(this);"></td>
+              </tr>
+              
+              <tr>
+                <th><label for="pw_change_pn">휴대폰 번호</label></th>
+                <td><input type="text" name="mbp_tel_no" id="pw_change_pn" class="full_input" title="휴대폰 번호" onkeyup="phoneFomatter(this);"></td>
+              </tr>
+              <tr>
+                <th><label for="code5">인증번호</label></th>
+                <td><input type="text" name="moblphon_crtfc_no" id="code5" class="inp_code" title="인증번호"><a href="#" class="inp_btn" onclick="send_num('cp'); return false;">인증번호 받기</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="common_btn_box">
+            <a href="#" class="btn btn-large green" onclick="change_pw(); return false;">비밀번호 초기화</a>
+          </div>
+        </div>
+      </div>
+    <input type="hidden" id="transkeyUuid" name="transkeyUuid" value="c1cd56c90293c093c185bfcffe916a0e82721847f7f8d4e064f602d5ddeb4c38"><input type="hidden" id="transkey_pwd" name="transkey_pwd" value=""><input type="hidden" id="transkey_HM_pwd" name="transkey_HM_pwd" value=""><input type="hidden" id="transkey_new_pwd" name="transkey_new_pwd" value=""><input type="hidden" id="transkey_HM_new_pwd" name="transkey_HM_new_pwd" value=""><input type="hidden" id="transkey_new_pwd_chk" name="transkey_new_pwd_chk" value=""><input type="hidden" id="transkey_HM_new_pwd_chk" name="transkey_HM_new_pwd_chk" value=""></form>
+  </div>
+</div>

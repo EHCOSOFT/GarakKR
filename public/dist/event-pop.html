@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>서울시농수산식품공사</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta name="description" content="서울시농수산식품공사">
+  <meta name="keywords" content="서울시농수산식품공사">
+  <meta property="og:site_name" content="서울시농수산식품공사">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울시농수산식품공사">
+  <meta property="og:description" content="서울시농수산식품공사">
+  <meta property="og:url" content="https://visionpointad.ai/">
+  
+  <!-- 로컬 파일을 사용한 스타일 시트 -->
+  <link rel="stylesheet" type="text/css" href="css/front/materialize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/front/layout.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/front/media.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/front/search.css" media="all">
+  <!-- 아이콘 폰트 로컬 사용 -->
+  <link rel="stylesheet" href="fonts/material-icons/material-icons.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 로컬 파일을 사용한 스크립트 -->
+  <script src="js/front/docs/js/jquery-1.12.4.min.js"></script>
+  <script src="js/front/docs/js/swiper.min.js"></script>
+  <script src="js/front/materialize.min.js"></script>
+  <script src="js/front/global.js"></script>
+  <script src="js/front/docs/js/jquery.timeago.min.js"></script>
+  <script src="js/front/docs/js/prism.js"></script>
+  <script src="js/front/docs/js/lunr.min.js"></script>
+  <script src="js/front/docs/js/search.js"></script>
+  <script src="js/front/docs/js/init.js"></script>
+</head>
+<body id="top">
+  <div class="wrapper">
+    <!-- 내용 -->
+  </div>
+
+  <script>
+    $(".sidenav-trigger").click(function() {
+       $(this).addClass("active");
+       $(this).parent('li').siblings().children('a').removeClass("active");
+       $(this).siblings(".dept2").slideToggle();
+       return false;
+    });
+    $(".btn-menu-toggle").click(function() {
+       $(this).addClass("active");
+       $(this).parent('li').siblings().children('a').removeClass("active");
+       $(this).siblings(".dept2").slideToggle();
+       return false;
+    });
+  </script>  
+</body>
+</html>
+<div class="col l12 s12 mk-pop m-3">
+    <div class="sub_box" id="sub_contents">
+        
+        <div class="sub_con">
+            
+              
+          <form role="form" id="aform" name="aform" method="post" action="">
+          <input type="hidden" id="event_manage_seq" name="event_manage_seq" value="">
+          <div id="imageBox"></div>
+          <div class="sub_each">
+              <h4 class="mb-3">행사참여 신청 조회</h4>
+              <!-- formA -->
+              <table class="formA">
+                <caption class="blind">성명, 휴대폰번호 내용을 포함한 표</caption>
+                <colgroup>
+                  <col style="width:15%;">
+                </colgroup>
+                <tbody>
+                 <tr>
+                    <th scope="row">행사명</th>
+                    <td>[서울식생활시민학교] 홈베이킹 클래스</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">신청자 <span class="fc_red">*</span></th>
+                    <td><input type="text" name="prtcpnt_nm" id="prtcpnt_nm" value="" onkeyup="setName()"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">연락처 <span class="fc_red">*</span></th>
+                    <td><input type="text" name="cttpc" id="cttpc" value="" onkeyup="replaceCttpc()"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- // sub_each -->
+            
+          
+            </form></div><!-- // sub_each -->
+            
+            <div class="common_btn_box">
+              <a href="#" class="btn-large" onclick="fnSearch(); return false;">조회</a>
+              <a href="#" class="btn-large grey" onclick="window.close(); return false;">취소</a>
+            </div>
+          
+          <form id="img_upload_form" enctype="multipart/form-data" method="post" style="display: none;">
+              <input type="file" id="img_file" multiple="multiple" name="imgfile[]" accept="image/*">
+          </form>
+                  </div>
+</div>
