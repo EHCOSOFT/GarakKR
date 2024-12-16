@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* 기존 소스 custom */
+.map .sec_01 .call-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.call-wrap .col.l2 {
+    margin: 0;
+    width: 100%;
+}
+
+.call-wrap .col.s10 {
+    width: 100%;
+}
+
+.map .sec_02 .bus-title h4 {
+    text-align: left;
+    word-break: break-all;
+}
+
+.table_bus tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.table_bus tbody>tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.table_bus tbody>tr>th {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: min-content;
+    padding: 12px 0 !important;
+}
+
+.table_bus tbody>tr>th img {
+    height: 24px;
+    margin: 0 !important;
+    width: 24px;
+}
+
+.table_bus tbody>tr>td {
+    height: min-content;
+}
+
+.table_bus tbody>tr>td>ul {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.table_bus tbody>tr>td>ul>li {
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.breadcrumb-wrap .breadcrumb li a.home {
+    font-size: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .map .sec_01 .call-wrap {
+        display: block;
+    }
+
+    .call-wrap .col.l2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+    }
+
+    .call-wrap .col.s10 {
+        width: 83.3333333333%;
+    }
+
+    .table_bus tbody>tr>td>ul {
+        flex-direction: row;
+    }
+    .table_bus tbody>tr>td>ul>li {
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .table_bus tbody {
+        display: table-row-group;
+    }
+
+    .table_bus tbody>tr {
+        display: table-row;
+    }
+    .table_bus tbody>tr>th {
+        display: table-cell;
+        padding: 15px 10px 10px !important;
+    }
+
+    .table_bus tbody>tr>th img {
+        height: unset;
+        margin: 0 auto 1rem auto !important;
+        width: unset;
+    }
+
+    .table_bus tbody>tr>td {
+        height: 3rem;
+    }
+
+    .table_bus tbody>tr>td>ul {
+        display: table !important;
+    }
+
+    .table_bus tbody>tr>td>ul>li {
+        padding: 10px 0 10px 15px !important; 
+    }
+}
+
+/* 신규 css */
+.map-img {
+    background: url(/public/dist/images/new/m_map.png);
+    background-size: cover;
+    background-position: left top;
+    display: block;
+    font-size: 0;
+    height: 220px;
+    width: 100%;
+}
+
+@media screen and (min-width: 468px) {
+    .map-img {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .map-img {
+        height: 340px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .map-img {
+        background: url(/public/dist/images/new/pc_map.png);
+        background-size: cover;
+        background-position: left top;
+        height: 380px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .map-img {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .map-img {
+        height: 580px;
+    }
+}
