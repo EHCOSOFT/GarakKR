@@ -1,0 +1,36 @@
+1218 
+
+누락페이지 추가 또는 마크업 수정
+ index.html의 빨간색 날짜(1218)이 수정 파일임
+ index.html의 상단 notice확인할것
+============================
+
+참고 > 1212수정사항  
+
++  SNB 다음에 나오는 div에 id="allContent"추가함(본문 바로가기 용)
+
+----------------------
+
+1. 본문 바로 가기 기능 추가
+
+2. GNB부분 중복된 ID값 수정함
+
+3.GNB + LNB + 컨텐츠를 <div class="wrapper">안으로 모두 이동
+
+4. sidenav-trigger(모바일에서 메뉴보기 a 태그)에 href 추가하고
+아래 스크립트 주석처리함. 아래 스크립트로 인해 모바일에서 메뉴 동작하지 않음. 
+
+ $(".sidenav-trigger").click(function() {
+       $(this).addClass("active");
+       $(this).parent('li').siblings().children('a').removeClass("active");
+       $(this).siblings(".dept2").slideToggle();
+       return false;
+ }); 
+
+
+5.문법에 맞지 않게 작업된 모바일용 메뉴 구조 변경함(.m-gnb-menu > .submenu-wrap > div.dl >dl들). 
+
+======================================
+1번에서 5번까지는 모든 페이지에 공통으로 적용해 주세요.
+=================================
+

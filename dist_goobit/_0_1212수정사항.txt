@@ -1,0 +1,29 @@
+1. 본문 바로 가기 기능 추가
+
+2. GNB부분 중복된 ID값 수정함
+
+3.GNB + LNB + 컨텐츠를 <div class="wrapper">안으로 모두 이동
+
+4. sidenav-trigger(모바일에서 메뉴보기 a 태그)에 href 추가하고
+아래 스크립트 주석처리함. 아래 스크립트로 인해 모바일에서 메뉴 동작하지 않음. 
+
+ $(".sidenav-trigger").click(function() {
+       $(this).addClass("active");
+       $(this).parent('li').siblings().children('a').removeClass("active");
+       $(this).siblings(".dept2").slideToggle();
+       return false;
+ }); 
+
+
+5.문법에 맞지 않게 작업된 모바일용 메뉴 구조 변경함(.m-gnb-menu > .submenu-wrap > div.dl >dl들). 
+
+======================================
+1번에서 5번까지는 모든 페이지에 공통으로 적용해 주세요.
+=================================
+
+
+
+- board_default.html
+
+6. datepicker부분 스크립트 수정함
+7.수정 요청 내용 반영함

@@ -1,0 +1,97 @@
+공통
+
+기존 1212수정사항 1-5번 +
+
+head부분 title 상세하게 작성 
+ex)  CEO 인사말 &rang; 공사소개 | 서울시농수산식품공사
+
+
+=====================
+0_01_company_ceo.html
+
+images/img_intro-ceo.jpg이미지 교체 
+해당부분 마크업 추가
+
+================
+
+0_02_company_purpose.html
+
+설립목적:
+images/img_inro-purpose.svg 이미지 걷어내고 마크업과 css로 처리
+
+주요사업범위:
+공시사업유형 삭제
+의미없는 이미지의 alt값 삭제 alt=""로 처리
+마크업 전체적으로 수정
+
+유형별 개요:
+- table 캡션 추가
+- th에 scope="col" 추가
+- 가운데정렬 class추가
+- 모바일 대응위해 아래(.scroll_box) 추가                       
+<div class="scroll_box"> 테이블 </div>
+
+================
+
+04_01_organization_chart.html
+
+
+<!--컨텐츠 내용-->
+<div class="col l12 s12 mt-5 contents-inner">
+<div class="row">
+<div class="col l12 s12 mt-5 contents-inner">
+<div class="row">
+<!--조직도-->
+<div class="row sec_01 mb-5">
+<div class="col l12 s12">
+<div class="group_map col l12 s12"> ~~~
+
+-------------------------------------------
+동일한 <div class="col l12 s12 mt-5 contents-inner">가 반복되고 있어서 다른 페이지와 다르게 상단 여백이 많음. 
+두번째에 있는 <div class="col l12 s12 mt-5 contents-inner">의 class를 지우고 div만 남김.
+-------------------------------------------
+첫번째에 있는 <div class="col l12 s12 mt-5 contents-inner">에서 .mt-5때문에 다른 페이지보다 브레드 크럼과 내용 사이에 여백이 많음. 삭제함. 
+최종 아래와 같이 정리함
+---------------------------------------------
+<!--컨텐츠 내용-->
+<div class="col l12 s12 contents-inner">
+<div class="row">
+<div class="">
+<div class="row"> 
+<!--조직도-->
+<div class="row sec_01 mb-5">
+<div class="col l12 s12">
+<div class="group_map col l12 s12"> ~~~ 
+
+-------------------------------
+타이틀 (h4) 텍스트 수정
+ <h4>조직안내</h4> -> <h4>조직도</h4>
+
+브레드크럼(.breadcrumb) 마지막 경로 텍스트 수정 
+ <li><a href="#" class="txt">조직안내</a></li> ->  <li><a href="#" class="txt">조직도</a></li>
+
+조직도 다이어그램
+-유통본부 쪽 마크업 수정
+
+======================================
+
+04_02_contact.html
+
+<!-- breadcrumb -->        
+<!-- 컨텐츠 내용 -->
+<div class="col l12 s12 mt-5 contents-inner"> ~~~ 
+
+<div class="col l12 s12 mt-5 contents-inner">에서 mt-5 class삭제 (브레드크럼과 내용 사이 여백이 다른 페이지&디자인 파일과 다름.) 
+
+-----------------------
+
+누락된 전화번호 테이블 추가
+
+a태그에 aria-label 필요없어서 삭제하고  title="전화걸기" 추가
+
+
+
+
+
+
+

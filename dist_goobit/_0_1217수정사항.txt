@@ -1,0 +1,24 @@
+09_08_dd_meal_project.html
+
+ <!--(D) 1217수정: 
+SNB에서  2뎁스 메뉴가 없는 경우 1뎁스의 링크가 동작하지 않음.
+해당부분 이미 개발에서 수정되어 있을것 같지만... 
+퍼블 작업 원할하게 하기 위해 수정함
+a 태그가 btn-menu-toggle이라는 class를 가지고 있을 때에만 .dept1 > li > a 링크가 작동안하도록 변경
+-->
+<script>
+$(document).ready(function() {
+    // 메뉴 클릭 시 이벤트 발생
+    $('.dept1 > li > a').on('click', function(e) {        
+        if($(this).hasClass('btn-menu-toggle')){			
+            e.preventDefault(); // a 태그 기본 동작 방지        
+            var $this = $(this);  // 클릭한 a 태그
+            var submenu = $this.next('.dept2');  // a 태그 바로 아래의 서브메뉴(.dept2)
+
+            // 현재 활성화된 메뉴 이외의 모든 메뉴 닫기
+            $('.dept1 > li > a').not($this).removeClass('active');  // 모든 a 태그에서 active 클래스 제거
+            $('.dept2').not(submenu).slideUp();  // 클릭하지 않은 서브메뉴들 닫기
+        }        
+    }); 
+});
+</script> 
