@@ -169,7 +169,7 @@
 .school-wrap {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .school-img img {
@@ -178,6 +178,6 @@
 
 @media screen and (min-width: 992px) {
     .school-wrap {
-        gap: 60px;
+        gap: 30px;
     }
 }
