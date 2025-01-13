@@ -552,7 +552,7 @@
 }
 
 .greenery-img {
-    background: url(/dist_goobit/images/new/09_04_09.png);
+    background: url(../../images/new/09_04_09.png);
     background-size: cover;
     height: 128px;
     width: 100%;
