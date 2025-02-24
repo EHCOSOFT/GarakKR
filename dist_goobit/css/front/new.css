@@ -1330,3 +1330,301 @@
     font-size: var(--font-16-md);
     text-align: center;
 }
+
+.img-desc {
+    align-items: flex-start;
+    display: flex;
+    gap: var(--space-8-xxs);
+    margin: var(--space-20-md) 0 0 0;
+}
+
+.img-desc li {
+    color: var(--color-navyblack);
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.img-desc li span {
+    color: #73BF43;
+}
+
+.eco-step {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20-md);
+}
+
+.eco-step .step-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8-xxs);
+}
+
+.eco-step .one {
+    align-items: center;
+    background: #FF8201;
+    border-radius: var(--radius-8-md);
+    color: var(--color-white);
+    display: flex;
+    font-size: var(--font-18-lg);
+    justify-content: center;
+    padding: var(--space-32-xl) 0;
+    width: 100%;
+}
+
+.eco-step .two-group {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12-xs);
+    width: 100%;
+}
+
+.eco-step .two-row-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8-xxs);
+    width: 100%;
+}
+
+.eco-step .two {
+    align-items: center;
+    border: 1px solid #FF8201;
+    border-radius: var(--radius-8-md);
+    color: var(--color-navyblack);
+    font-size: var(--font-16-md);
+    display: flex;
+    justify-content: center;
+    padding: var(--space-20-md) 0;
+    text-align: center;
+    width: 100%;
+}
+
+.eco-step .three-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8-xxs);
+    width: 100%;
+}
+
+.eco-step .three {
+    align-items: center;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-8-md);
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-8-xxs);
+    width: 100%;
+}
+
+.eco-step .three dt {
+    background: #FFF4EA;
+    border-radius: var(--radius-8-md);
+    color: #FF8201;
+    padding: var(--space-16-sm) 0;
+    text-align: center;
+    width: 100%;
+}
+
+.eco-step .three dd {
+    padding: var(--space-12-xs);
+}
+
+.eco-step .four {
+    align-items: center;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-8-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-16-sm);
+    width: 100%;
+}
+
+.eco-step span {
+    align-items: center;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.eco-step span::before {
+    background: url(../../images/new/i-step-right.svg);
+    content: '';
+    display: inline-block;
+    height: 20px;
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .eco-step .step-group {
+        flex-direction: row;
+    }
+
+    .eco-step .one {
+        flex: 0 0 auto;
+        width: 120px;
+    }
+
+    .eco-step .two-row-group {
+        flex-direction: row;
+    }
+
+    .eco-step .two {
+        flex: 0 0 auto;
+        width: 120px;
+    }
+
+    .eco-step .three-group {
+        flex-direction: row;
+    }
+
+    .eco-step .four {
+        flex: 0 0 auto;
+        height: 100%;
+        width: 100px;
+    }
+
+    .eco-step span::before {
+        transform: rotate(0deg);
+    }
+}
+
+.system-schematic {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-20-md);
+}
+
+.system-top .title {
+    background: linear-gradient(90deg, #2F5BC1 0%, #0584BF 100%);
+    border-radius: 100px;
+    color: var(--color-white);
+    font-size: var(--font-20-xl);
+    font-weight: var(--font-bold);
+    padding: var(--space-8-xxs);
+    text-align: center;
+}
+
+.system-schematic .system-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8-xxs);
+    width: 100%;
+}
+
+.system-schematic .system-group .left {
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary-bg);
+    border-radius: var(--radius-8-md);
+    font-size: var(--font-18-lg);
+    font-weight: var(--font-semibold);
+    text-align: center;
+    padding: var(--space-16-sm);
+}
+
+.system-schematic br.pc {
+    display: none;
+}
+
+.system-schematic .system-group .right {
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-8-md);
+    color: var(--color-navyblack);
+    font-size: var(--font-18-lg);
+    font-weight: var(--font-semibold);
+    padding: var(--space-12-xs);
+    text-align: center;
+}
+
+.system-schematic .system-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16-sm);
+}
+
+.system-schematic .right-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8-xxs);
+    width: 100%;
+}
+
+.system-schematic .right-group dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8-xxs);
+    width: 100%;
+}
+
+.system-schematic .right-group dt {
+    background: var(--color-primary);
+    border-radius: var(--radius-8-md);
+    color: var(--color-white);
+    font-size: var(--font-16-md);
+    font-weight: var(--font-semibold);
+    padding: var(--space-12-xs);
+    text-align: center;
+}
+
+.system-schematic .right-group dt.point {
+    background: var(--color-primary-dark);
+}
+
+.system-schematic .right-group dd {
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-8-md);
+    padding: var(--space-12-xs);
+}
+
+.system-schematic .right-group h3 {
+    color: var(--color-primary-dark);
+    font-size: var(--font-18-lg);
+    font-weight: var(--font-semibold);
+    margin: 0 0 var(--space-8-xxs) 0;
+    text-align: center;
+}
+
+.system-schematic .right-group ul {
+    list-style: disc;
+    padding: 0 0 0 var(--space-20-md);
+}
+
+.system-schematic .right-group ul li {
+    color: var(--color-navyblack);
+    font-size: var(--font-16-md);
+    line-height: 24px;
+    list-style: disc;
+}
+
+@media screen and (min-width: 992px) {
+    .system-top .title {
+        padding: var(--space-16-sm) 0;
+    }
+
+    .system-schematic .system-group {
+        flex-direction: row;
+    }
+
+    .system-schematic .system-group .left {
+        align-items: center;
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 120px;
+    }
+
+    .system-schematic .system-group .right {
+        padding: var(--space-16-sm);
+        width: 100%;
+    }
+
+    .system-schematic .right-group {
+        flex-direction: row;
+    }
+
+    .system-schematic .right-group dd {
+        height: 100%;
+    }
+}
